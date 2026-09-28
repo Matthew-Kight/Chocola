@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.states.MusicState
+import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.navigation.Screen
 
 @Composable
@@ -25,7 +26,8 @@ fun PlayingTopRow(
     modifier: Modifier = Modifier,
     musicState: MusicState,
     onNavigate: (Screen) -> Unit,
-    onShrinkToSearchbar: () -> Unit
+    onShrinkToSearchbar: () -> Unit,
+    onHandlePlayerActions: (PlayerActions) -> Unit
 ) {
     Row(
         modifier = modifier
@@ -51,7 +53,8 @@ fun PlayingTopRow(
 
         MoreOptionsButton(
             musicState = musicState,
-            onNavigate = onNavigate
+            onNavigate = onNavigate,
+            onHandlePlayerActions = onHandlePlayerActions
         )
     }
 }

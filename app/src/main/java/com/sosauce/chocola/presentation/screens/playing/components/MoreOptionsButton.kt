@@ -26,19 +26,24 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.states.MusicState
+import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.components.MoreOptions
+import com.sosauce.chocola.presentation.components.TrackDropdownMenu
 import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
 import com.sosauce.chocola.utils.rememberInteractionSource
+import com.sosauce.nekobites.animations.AnimatedDrawable
+import com.sosauce.nekobites.animations.AnimatedDrawableFile
 
 @Composable
 fun MoreOptionsButton(
     modifier: Modifier = Modifier,
     musicState: MusicState,
     onNavigate: (Screen) -> Unit,
-    onShrinkToSearchbar: () -> Unit = {}
+    onShrinkToSearchbar: () -> Unit = {},
+    onHandlePlayerActions: (PlayerActions) -> Unit,
 ) {
 
     val context = LocalContext.current
@@ -46,67 +51,7 @@ fun MoreOptionsButton(
     var showMoreDialog by remember { mutableStateOf(false) }
     var showPlaylistDialog by remember { mutableStateOf(false) }
     var showDeletionDialog by remember { mutableStateOf(false) }
-    val interactionSources = List(2) { rememberInteractionSource() }
-    val activityResultLauncher =
-        rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) { }
-    val moreOptions = listOf(
-//        MoreOptions(
-//            text = { stringResource(R.string.open_eq) },
-//            onClick = {
-//                try {
-//                    val intent =
-//                        Intent(AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL).apply {
-//                            putExtra(AudioEffect.EXTRA_AUDIO_SESSION, musicState.audioSessionAudio)
-//                            putExtra(AudioEffect.EXTRA_PACKAGE_NAME, context.packageName)
-//                            putExtra(AudioEffect.EXTRA_CONTENT_TYPE, AudioEffect.CONTENT_TYPE_MUSIC)
-//                        }
-//                    activityResultLauncher.launch(intent)
-//                } catch (e: Exception) {
-//                    Toast.makeText(context, "Unable to open system equalizer", Toast.LENGTH_SHORT)
-//                        .show()
-//                }
-//            },
-//            icon = R.drawable.eq
-//        ),
-        MoreOptions(
-            text = { stringResource(R.string.edit) },
-            onClick = {
-                showMoreDialog = false
-                onNavigate(
-                    Screen.MetadataEditor(
-                        musicState.track.path,
-                        musicState.track.uri.toString()
-                    )
-                )
-            },
-            icon = R.drawable.edit_rounded
-        ),
-        MoreOptions(
-            text = { stringResource(R.string.go_to, musicState.track.album) },
-            onClick = {
-                showMoreDialog = false
-                onNavigate(
-                    Screen.AlbumsDetails(musicState.track.album)
-                )
-            },
-            icon = androidx.media3.session.R.drawable.media3_icon_album
-        ),
-        MoreOptions(
-            text = { stringResource(R.string.go_to, musicState.track.artist) },
-            onClick = {
-                showMoreDialog = false
-                onNavigate(
-                    Screen.ArtistsDetails(musicState.track.artist)
-                )
-            },
-            icon = R.drawable.artist_rounded
-        ),
-        MoreOptions(
-            text = { stringResource(R.string.add_to_playlist) },
-            onClick = { showPlaylistDialog = true },
-            icon = R.drawable.playlist_add
-        )
-    )
+    val interactionSources = List(3) { rememberInteractionSource() }
 
     if (showDetailsDialog) {
         TracksDetailsDialog(
@@ -129,9 +74,24 @@ fun MoreOptionsButton(
         )
     }
 
+    TrackDropdownMenu(
+        track = musicState.track,
+        isExpanded = showMoreDialog,
+        onDismissRequest = { showMoreDialog = false },
+        onNavigate = onNavigate,
+        onHandlePlayerActions = onHandlePlayerActions,
+        extraOptions = listOf(
+            MoreOptions(
+                text = { stringResource(R.string.open_eq) },
+                onClick = {},
+                icon = R.drawable.eq
+            )
+        )
+    )
+
     ButtonGroup(
         modifier = modifier,
-        horizontalArrangement = Arrangement.spacedBy(2.dp),
+        horizontalArrangement = Arrangement.spacedBy(1.dp),
         overflowIndicator = {}
     ) {
         customItem(
@@ -141,8 +101,8 @@ fun MoreOptionsButton(
                     shape = RoundedCornerShape(
                         topStart = 50.dp,
                         bottomStart = 50.dp,
-                        topEnd = 4.dp,
-                        bottomEnd = 4.dp
+                        topEnd = 2.dp,
+                        bottomEnd = 2.dp
                     ),
                     colors = IconButtonDefaults.filledIconButtonColors(
                         containerColor = MaterialTheme.colorScheme.surfaceContainer,
@@ -170,10 +130,10 @@ fun MoreOptionsButton(
                         onNavigate(Screen.Queue)
                     },
                     shape = RoundedCornerShape(
-                        topStart = 4.dp,
-                        bottomStart = 4.dp,
-                        topEnd = 50.dp,
-                        bottomEnd = 50.dp
+                        topStart = 2.dp,
+                        bottomStart = 2.dp,
+                        topEnd = 2.dp,
+                        bottomEnd = 2.dp
                     ),
                     colors = IconButtonDefaults.filledIconButtonColors(
                         containerColor = MaterialTheme.colorScheme.surfaceContainer,
@@ -192,6 +152,37 @@ fun MoreOptionsButton(
             },
             menuContent = {}
         )
+        customItem(
+            buttonGroupContent = {
+                IconButton(
+                    onClick = {
+                        showMoreDialog = !showMoreDialog
+                    },
+                    shape = RoundedCornerShape(
+                        topStart = 2.dp,
+                        bottomStart = 2.dp,
+                        topEnd = 50.dp,
+                        bottomEnd = 50.dp
+                    ),
+                    colors = IconButtonDefaults.filledIconButtonColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceContainer,
+                        contentColor = contentColorFor(MaterialTheme.colorScheme.surfaceContainer)
+                    ),
+                    interactionSource = interactionSources[2],
+                    modifier = Modifier
+                        .size(IconButtonDefaults.smallContainerSize(IconButtonDefaults.IconButtonWidthOption.Wide))
+                        .animateWidth(interactionSources[2])
+                ) {
+                    AnimatedDrawable(
+                        drawable = AnimatedDrawableFile.MORE_HOR,
+                        atEnd = showMoreDialog
+                    )
+                }
+            },
+            menuContent = {}
+        )
     }
+
+
 
 }

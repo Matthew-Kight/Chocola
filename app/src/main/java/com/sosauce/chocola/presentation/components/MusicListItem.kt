@@ -190,7 +190,7 @@ fun DefaultMusicListItemTrailingContent(
 }
 
 @Composable
-private fun TrackDropdownMenu(
+fun TrackDropdownMenu(
     track: CuteTrack,
     isExpanded: Boolean,
     onDismissRequest: () -> Unit,

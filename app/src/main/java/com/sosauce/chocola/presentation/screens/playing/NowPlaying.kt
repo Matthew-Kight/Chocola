@@ -154,7 +154,8 @@ private fun NowPlayingContent(
                         modifier = Modifier.padding(end = 15.dp),
                         musicState = musicState,
                         onNavigate = onNavigate,
-                        onShrinkToSearchbar = onShrinkToSearchbar
+                        onShrinkToSearchbar = onShrinkToSearchbar,
+                        onHandlePlayerActions = onHandlePlayerActions
                     )
                 }
             )

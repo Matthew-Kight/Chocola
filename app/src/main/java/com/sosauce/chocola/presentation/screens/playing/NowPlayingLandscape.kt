@@ -104,7 +104,8 @@ fun NowPlayingLandscape(
                 PlayingTopRow(
                     musicState = musicState,
                     onNavigate = onNavigate,
-                    onShrinkToSearchbar = onShrinkToSearchbar
+                    onShrinkToSearchbar = onShrinkToSearchbar,
+                    onHandlePlayerActions = onHandlePlayerActions
                 )
                 TitleAndArtist(
                     title = musicState.track.title,

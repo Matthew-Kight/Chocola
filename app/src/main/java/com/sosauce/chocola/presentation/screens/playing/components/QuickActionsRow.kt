@@ -68,7 +68,7 @@ fun QuickActionsRow(
         val interactionSources = List(3) { rememberInteractionSource() }
 
         ButtonGroup(
-            horizontalArrangement = Arrangement.spacedBy(2.dp),
+            horizontalArrangement = Arrangement.spacedBy(1.dp),
             overflowIndicator = {}
         ) {
 
@@ -79,7 +79,7 @@ fun QuickActionsRow(
                         if (musicState.shuffle) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surfaceContainer
                     )
                     val shuffleEnd by animateDpAsState(
-                        if (musicState.shuffle) 50.dp else 4.dp
+                        if (musicState.shuffle) 50.dp else 2.dp
                     )
 
                     IconButton(
@@ -116,7 +116,7 @@ fun QuickActionsRow(
                     )
 
                     val repeatShape by animateDpAsState(
-                        if (musicState.repeatMode == Player.REPEAT_MODE_ONE || musicState.repeatMode == Player.REPEAT_MODE_ALL) 50.dp else 4.dp
+                        if (musicState.repeatMode == Player.REPEAT_MODE_ONE || musicState.repeatMode == Player.REPEAT_MODE_ALL) 50.dp else 2.dp
                     )
 
                     IconButton(
@@ -151,7 +151,7 @@ fun QuickActionsRow(
                     )
 
                     val rateStart by animateDpAsState(
-                        if (musicState.speed != 1.0f || musicState.pitch != 1.0f) 50.dp else 4.dp
+                        if (musicState.speed != 1.0f || musicState.pitch != 1.0f) 50.dp else 2.dp
                     )
 
                     IconButton(
