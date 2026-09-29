@@ -96,6 +96,25 @@ class PlaybackService : MediaLibraryService(), KoinComponent {
 
     val callback = object : MediaLibrarySession.Callback {
 
+
+        @UnstableApi
+        override fun onConnect(
+            session: MediaSession,
+            controller: MediaSession.ControllerInfo
+        ): MediaSession.ConnectionResult {
+
+            val playerCommands = MediaSession.ConnectionResult.DEFAULT_PLAYER_COMMANDS.buildUpon()
+                .add(Player.COMMAND_PLAY_PAUSE)
+                .add(Player.COMMAND_SEEK_TO_NEXT)
+                .add(Player.COMMAND_SEEK_TO_PREVIOUS)
+                .build()
+
+            return MediaSession.ConnectionResult.AcceptedResultBuilder(session)
+                .setAvailableSessionCommands(MediaSession.ConnectionResult.DEFAULT_SESSION_COMMANDS)
+                .setAvailablePlayerCommands(playerCommands)
+                .build()
+        }
+
         @UnstableApi
         override fun onGetLibraryRoot(
             session: MediaLibrarySession,
