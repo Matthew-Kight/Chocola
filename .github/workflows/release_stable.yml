@@ -60,21 +60,23 @@
           run: npm install -g @github/copilot
 
         - name: Generate release note
+          continue-on-error: true
           env:
             COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_PAT }}
             RELEASE_NOTE_PROMPT: ${{ secrets.RELEASE_NOTE_PROMPT }}
           run: |
-            SUMMARY=$(copilot -p "$RELEASE_NOTE_PROMPT" \
-            -s \
-            --allow-tool='shell(git:*)' \
-            --no-ask-user)
-            
-            {
-            echo "SUMMARY<<EOF"
-            echo "$SUMMARY"
-            echo "EOF"
-            } >> "$GITHUB_ENV"
+            SUMMARY=""
+            if copilot -p "$RELEASE_NOTE_PROMPT" -s --allow-tool='shell(git:*)' --no-ask-user > copilot_summary.txt 2>&1; then
+              SUMMARY=$(cat copilot_summary.txt)
+            else
+              echo "Copilot release note generation failed; continuing without custom summary."
+            fi
 
+            {
+              echo "SUMMARY<<EOF"
+              echo "$SUMMARY"
+              echo "EOF"
+            } >> "$GITHUB_ENV"
 
         - name: Create Git tag
           env:
