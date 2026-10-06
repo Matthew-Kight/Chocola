@@ -61,7 +61,8 @@ fun FolderHeader(
             IconButton(
                 onClick = {
                     onHandlePlayerAction(
-                        PlayerActions.StartPlaylist(
+                        PlayerActions.PlayFromSource(
+                            mediaId = null,
                             source = PlaySource.ExplicitTracks(category.tracks)
                         )
                     )

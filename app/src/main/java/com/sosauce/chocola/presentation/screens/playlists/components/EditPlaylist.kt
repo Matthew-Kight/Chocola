@@ -145,7 +145,7 @@ fun EditPlaylist(
                         newPlaylist = newPlaylist.copy(
                             color = newColor.toArgb()
                         )
-                        onDismissRequest()
+                        showColorPicker = false
                     }
                 ) {
                     Text(stringResource(R.string.save))
