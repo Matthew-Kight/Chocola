@@ -106,7 +106,7 @@ class MusicViewModel(
 
                 viewModelScope.launch {
                     val shouldMuteOnPause = userPreferences.getPauseOnMute().first()
-                    if (muted && shouldMuteOnPause) mediaController!!.pause()
+                    if (volume == 0 && shouldMuteOnPause) mediaController!!.pause()
                 }
             }
 

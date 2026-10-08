@@ -26,6 +26,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
+import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.screens.main.Category
@@ -34,6 +35,7 @@ import com.sosauce.chocola.utils.ICON_TEXT_SPACING
 @Composable
 fun FolderHeader(
     modifier: Modifier = Modifier,
+    musicState: MusicState,
     category: Category,
     isHidden: Boolean,
     onToggleVisibility: () -> Unit,
@@ -62,7 +64,7 @@ fun FolderHeader(
                 onClick = {
                     onHandlePlayerAction(
                         PlayerActions.PlayFromSource(
-                            mediaId = null,
+                            mediaId = if (musicState.shuffle) null else category.tracks[0].mediaId,
                             source = PlaySource.ExplicitTracks(category.tracks)
                         )
                     )

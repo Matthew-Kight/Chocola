@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.models.CuteTrack
 import com.sosauce.chocola.data.models.Playlist
+import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.nekobites.animations.AnimatedFab
@@ -34,6 +35,7 @@ import com.sosauce.nekobites.animations.AnimatedFab
 fun PlaylistHeader(
     playlist: Playlist,
     tracks: List<CuteTrack>,
+    musicState: MusicState,
     onHandlePlayerActions: (PlayerActions) -> Unit
 ) {
     Row(
@@ -83,7 +85,8 @@ fun PlaylistHeader(
         AnimatedFab(
             onClick = {
                 onHandlePlayerActions(
-                    PlayerActions.StartPlaylist(
+                    PlayerActions.PlayFromSource(
+                        mediaId = if (musicState.shuffle) null else tracks[0].mediaId,
                         source = PlaySource.ExplicitTracks(tracks)
                     )
                 )

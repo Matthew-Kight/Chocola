@@ -50,6 +50,7 @@ class PlaylistDetailsViewModel(
         PlaylistDetailsState(
             isLoading = false,
             tracks = searched,
+            playlistTracks = tracks.fastFilter { playlist.musics.contains(it.mediaId) },
             playlist = playlist
         )
     }.flowOn(Dispatchers.Default).stateIn(
@@ -75,5 +76,6 @@ class PlaylistDetailsViewModel(
 data class PlaylistDetailsState(
     val isLoading: Boolean = true,
     val playlist: Playlist = Playlist(),
-    val tracks: List<CuteTrack> = emptyList()
+    val tracks: List<CuteTrack> = emptyList(),
+    val playlistTracks: List<CuteTrack> = emptyList()
 )

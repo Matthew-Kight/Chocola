@@ -153,6 +153,7 @@ fun SharedTransitionScope.PlaylistDetailsScreen(
                             PlaylistHeader(
                                 playlist = state.playlist,
                                 tracks = state.tracks,
+                                musicState = musicState,
                                 onHandlePlayerActions = onHandlePlayerAction
                             )
                             NumberOfTracks(size = state.tracks.size)
@@ -178,7 +179,7 @@ fun SharedTransitionScope.PlaylistDetailsScreen(
                                     onHandlePlayerAction(
                                         PlayerActions.PlayFromSource(
                                             mediaId = track.mediaId,
-                                            source = PlaySource.ExplicitTracks(state.tracks)
+                                            source = PlaySource.ExplicitTracks(state.playlistTracks)
                                         )
                                     )
                                 }

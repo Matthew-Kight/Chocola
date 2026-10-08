@@ -101,7 +101,8 @@ fun SharedTransitionScope.AlbumHeader(
             AnimatedFab(
                 onClick = {
                     onHandlePlayerActions(
-                        PlayerActions.StartPlaylist(
+                        PlayerActions.PlayFromSource(
+                            mediaId = album.tracks[0].mediaId,
                             source = PlaySource.Album(album.name)
                         )
                     )

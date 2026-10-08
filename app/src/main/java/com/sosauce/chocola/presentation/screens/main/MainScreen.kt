@@ -171,6 +171,7 @@ fun SharedTransitionScope.MainScreen(
                         item {
                             FolderHeader(
                                 modifier = Modifier.animateItem(),
+                                musicState = musicState,
                                 category = category,
                                 isHidden = category.path in hiddenFolders,
                                 onToggleVisibility = {
