@@ -153,6 +153,7 @@ fun SharedTransitionScope.PlaylistDetailsScreen(
                             PlaylistHeader(
                                 playlist = state.playlist,
                                 tracks = state.tracks,
+                                playlistTracks = state.playlistTracks,
                                 musicState = musicState,
                                 onHandlePlayerActions = onHandlePlayerAction
                             )

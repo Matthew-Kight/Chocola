@@ -30,11 +30,13 @@ import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.nekobites.animations.AnimatedFab
+import kotlin.random.Random
 
 @Composable
 fun PlaylistHeader(
     playlist: Playlist,
     tracks: List<CuteTrack>,
+    playlistTracks: List<CuteTrack>,
     musicState: MusicState,
     onHandlePlayerActions: (PlayerActions) -> Unit
 ) {
@@ -86,8 +88,8 @@ fun PlaylistHeader(
             onClick = {
                 onHandlePlayerActions(
                     PlayerActions.PlayFromSource(
-                        mediaId = if (musicState.shuffle) null else tracks[0].mediaId,
-                        source = PlaySource.ExplicitTracks(tracks)
+                        mediaId = if (musicState.shuffle) tracks[Random.nextInt(0, tracks.size)].mediaId else tracks[0].mediaId,
+                        source = PlaySource.ExplicitTracks(playlistTracks)
                     )
                 )
             },

@@ -218,9 +218,11 @@ fun List<CuteTrack>.search(
     val regexPattern = query.regex(searchSettings.matchCase)
     return fastFilter { track ->
         if (searchSettings.regex) {
-            regexPattern.containsMatchIn(track.title)
+            regexPattern.containsMatchIn(track.title) ||
+                    regexPattern.containsMatchIn(track.artist)
         } else {
-            track.title.contains(query, !searchSettings.matchCase)
+            track.title.contains(query, !searchSettings.matchCase) ||
+                    track.artist.contains(query, !searchSettings.matchCase)
         }
     }
 }

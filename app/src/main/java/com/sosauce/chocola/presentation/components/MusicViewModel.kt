@@ -392,7 +392,10 @@ class MusicViewModel(
             is PlayerActions.PlayRandom -> mediaController!!.playRandom()
             is PlayerActions.PlayOrPause -> mediaController!!.playOrPause()
             is PlayerActions.SeekToNextMusic -> mediaController!!.seekToNextMediaItem()
-            is PlayerActions.SeekToPreviousMusic -> mediaController!!.seekToPreviousMediaItem()
+            is PlayerActions.SeekToPreviousMusic -> {
+                if (mediaController!!.currentPosition <= 15*100) mediaController!!.seekToPreviousMediaItem()
+                else mediaController!!.seekTo(0)
+            }
             is PlayerActions.SeekTo -> mediaController!!.seekTo(mediaController!!.currentPosition + action.position)
             is PlayerActions.SeekToSlider -> mediaController!!.seekTo(action.position)
             is PlayerActions.RewindTo -> mediaController!!.seekTo(mediaController!!.currentPosition - action.position)
