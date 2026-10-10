@@ -32,8 +32,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.utils.rememberFocusRequester
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.rememberFocusRequester
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import kotlinx.coroutines.android.awaitFrame
 
 @Composable

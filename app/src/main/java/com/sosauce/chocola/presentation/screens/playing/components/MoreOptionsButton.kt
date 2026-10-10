@@ -33,7 +33,7 @@ import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
-import com.sosauce.chocola.utils.rememberInteractionSource
+import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.nekobites.animations.AnimatedDrawable
 import com.sosauce.nekobites.animations.AnimatedDrawableFile
 

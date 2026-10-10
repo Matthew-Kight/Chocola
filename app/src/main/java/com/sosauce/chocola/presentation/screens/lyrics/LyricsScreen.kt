@@ -20,7 +20,7 @@ import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playing.components.PlayPauseButton
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.animations.AnimatedFab
 
 @Composable

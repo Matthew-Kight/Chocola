@@ -34,7 +34,7 @@ import com.sosauce.chocola.data.widgets.WidgetsHelper
 import com.sosauce.chocola.domain.EqualizerManager
 import com.sosauce.chocola.domain.helpers.AndroidAutoHelper
 import com.sosauce.chocola.core.designsystem.CUTE_MUSIC_ID
-import com.sosauce.chocola.utils.playOrPause
+import com.sosauce.chocola.core.presentation.util.playOrPause
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Job

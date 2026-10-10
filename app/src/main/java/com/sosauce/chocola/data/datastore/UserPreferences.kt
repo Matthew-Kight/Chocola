@@ -26,7 +26,7 @@ import com.sosauce.chocola.utils.AlbumSort
 import com.sosauce.chocola.utils.ArtistSort
 import com.sosauce.chocola.utils.PlaylistSort
 import com.sosauce.chocola.utils.TrackSort
-import com.sosauce.chocola.utils.copyMutate
+import com.sosauce.chocola.core.domain.util.copyMutate
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map

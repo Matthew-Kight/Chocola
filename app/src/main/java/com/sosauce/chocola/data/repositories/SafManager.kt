@@ -8,7 +8,7 @@ import androidx.core.net.toUri
 import com.kyant.taglib.TagLib
 import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.models.CuteTrack
-import com.sosauce.chocola.utils.getUriFromByteArray
+import com.sosauce.chocola.core.data.content.getUriFromByteArray
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow

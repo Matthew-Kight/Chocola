@@ -12,7 +12,7 @@ import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.models.Album
 import com.sosauce.chocola.data.models.Artist
 import com.sosauce.chocola.data.models.CuteTrack
-import com.sosauce.chocola.utils.search
+import com.sosauce.chocola.core.domain.library.search
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.SharingStarted

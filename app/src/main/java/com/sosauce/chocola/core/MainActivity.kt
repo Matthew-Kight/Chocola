@@ -15,7 +15,7 @@ import com.sosauce.chocola.presentation.components.MusicViewModel
 import com.sosauce.chocola.presentation.navigation.Nav
 import com.sosauce.chocola.presentation.screens.setup.SetupScreen
 import com.sosauce.chocola.presentation.theme.ChocolaTheme
-import com.sosauce.chocola.utils.hasMusicPermission
+import com.sosauce.chocola.core.presentation.util.hasMusicPermission
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.androidx.compose.koinViewModel

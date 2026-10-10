@@ -64,8 +64,8 @@ import com.sosauce.chocola.data.models.Playlist
 import com.sosauce.chocola.presentation.components.EmojiPicker
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistViewModel
-import com.sosauce.chocola.utils.copyMutate
-import com.sosauce.chocola.utils.rememberInteractionSource
+import com.sosauce.chocola.core.domain.util.copyMutate
+import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.nekobites.animations.Icon
 import com.sosauce.nekobites.animations.rememberClipboardIconController
 import com.sosauce.nekobites.components.ColorPickerDialog

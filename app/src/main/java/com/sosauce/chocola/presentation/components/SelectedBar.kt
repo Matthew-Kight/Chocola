@@ -35,7 +35,7 @@ import com.sosauce.chocola.data.models.CuteTrack
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
-import com.sosauce.chocola.utils.rememberInteractionSource
+import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.sweetselect.SweetSelectState
 
 @Composable

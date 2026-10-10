@@ -33,7 +33,7 @@ import com.sosauce.chocola.data.datastore.rememberWhitelistedFolders
 import com.sosauce.chocola.presentation.screens.settings.FoldersViewModel
 import com.sosauce.chocola.presentation.screens.settings.compenents.SliderSettingsCards
 import com.sosauce.chocola.presentation.screens.settings.compenents.foldersView
-import com.sosauce.chocola.utils.copyMutate
+import com.sosauce.chocola.core.domain.util.copyMutate
 import org.koin.androidx.compose.koinViewModel
 
 @Composable

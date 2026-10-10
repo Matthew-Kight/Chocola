@@ -20,9 +20,9 @@ import com.kyant.taglib.AudioPropertiesReadStyle
 import com.kyant.taglib.Metadata
 import com.kyant.taglib.Picture
 import com.kyant.taglib.TagLib
-import com.sosauce.chocola.utils.toAudioFileMetadata
-import com.sosauce.chocola.utils.toModifiableMap
-import com.sosauce.chocola.utils.toPropertyMap
+import com.sosauce.chocola.feature.metadata.presentation.toAudioFileMetadata
+import com.sosauce.chocola.feature.metadata.presentation.toModifiableMap
+import com.sosauce.chocola.feature.metadata.presentation.toPropertyMap
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow

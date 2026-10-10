@@ -1,4 +1,4 @@
-package com.sosauce.chocola.utils
+package com.sosauce.chocola.core.domain.util
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine

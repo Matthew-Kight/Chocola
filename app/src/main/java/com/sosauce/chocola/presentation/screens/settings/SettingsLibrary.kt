@@ -51,8 +51,8 @@ import com.sosauce.chocola.presentation.screens.settings.compenents.ClickableSet
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
 import com.sosauce.chocola.presentation.screens.settings.compenents.SliderSettingsCards
 import com.sosauce.chocola.presentation.screens.settings.compenents.foldersView
-import com.sosauce.chocola.utils.copyMutate
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.domain.util.copyMutate
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import kotlin.collections.listOf
 
 @Composable

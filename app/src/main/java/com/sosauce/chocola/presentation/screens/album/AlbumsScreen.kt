@@ -30,7 +30,7 @@ import com.sosauce.chocola.presentation.components.CuteSearchbarDefaults
 import com.sosauce.chocola.presentation.components.NoResult
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.album.components.AlbumCard
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.components.LoadingBox
 import com.sosauce.nekobites.components.NoXFound
 

@@ -66,8 +66,8 @@ import com.sosauce.chocola.presentation.screens.playing.components.WavySlider
 import com.sosauce.chocola.core.designsystem.ArtworkShape
 import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.utils.NumbersOnlyTransformation
-import com.sosauce.chocola.utils.rememberFocusRequester
-import com.sosauce.chocola.utils.toPaletteStyle
+import com.sosauce.chocola.core.presentation.util.rememberFocusRequester
+import com.sosauce.chocola.core.presentation.util.toPaletteStyle
 import com.sosauce.nekobites.components.Spacer
 
 @Composable

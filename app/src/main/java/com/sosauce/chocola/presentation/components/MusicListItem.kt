@@ -63,7 +63,7 @@ import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksD
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
 import com.sosauce.chocola.utils.LocalScreen
-import com.sosauce.chocola.utils.copyMutate
+import com.sosauce.chocola.core.domain.util.copyMutate
 import com.sosauce.nekobites.animations.AnimatedDrawable
 import com.sosauce.nekobites.animations.AnimatedDrawableFile
 import com.sosauce.nekobites.components.AnimatedSelectedIcon

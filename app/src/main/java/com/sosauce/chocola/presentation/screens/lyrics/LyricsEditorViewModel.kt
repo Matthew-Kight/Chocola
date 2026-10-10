@@ -8,8 +8,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.sosauce.chocola.R
 import com.sosauce.chocola.domain.model.Lyrics
-import com.sosauce.chocola.utils.copyMutate
-import com.sosauce.chocola.utils.toLyricDuration
+import com.sosauce.chocola.core.domain.util.copyMutate
+import com.sosauce.chocola.core.presentation.util.toLyricDuration
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

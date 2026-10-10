@@ -12,9 +12,9 @@ import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.models.CuteTrack
 import com.sosauce.chocola.data.repositories.SafManager
 import com.sosauce.chocola.utils.TrackSort
-import com.sosauce.chocola.utils.combine
-import com.sosauce.chocola.utils.observe
-import com.sosauce.chocola.utils.orderAlbumTrackNumber
+import com.sosauce.chocola.core.domain.util.combine
+import com.sosauce.chocola.core.data.content.observe
+import com.sosauce.chocola.core.domain.library.orderAlbumTrackNumber
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

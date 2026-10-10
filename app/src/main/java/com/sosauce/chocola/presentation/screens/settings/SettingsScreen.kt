@@ -43,7 +43,7 @@ import com.sosauce.chocola.presentation.screens.aod.AlwaysOnDisplay
 import com.sosauce.chocola.presentation.screens.settings.compenents.AboutCard
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsCategoryCard
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsScreens
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.helpers.ObserveAsEvents
 import org.koin.androidx.compose.koinViewModel

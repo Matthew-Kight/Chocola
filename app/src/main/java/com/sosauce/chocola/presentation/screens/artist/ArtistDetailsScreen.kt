@@ -62,8 +62,8 @@ import com.sosauce.chocola.presentation.screens.album.components.NumberOfTracks
 import com.sosauce.chocola.presentation.screens.artist.components.ArtistHeader
 import com.sosauce.chocola.presentation.screens.artist.components.NumberOfAlbums
 import com.sosauce.chocola.utils.ImageUtils
-import com.sosauce.chocola.utils.barsContentTransform
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.barsContentTransform
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.components.LoadingBox
 import com.sosauce.sweetselect.rememberSweetSelectState

@@ -44,7 +44,7 @@ import com.sosauce.chocola.presentation.screens.settings.compenents.EqualizerPre
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwitch
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
 import com.sosauce.chocola.presentation.screens.settings.compenents.SliderSettingsCards
-import com.sosauce.chocola.utils.bouncySpec
+import com.sosauce.chocola.core.presentation.util.bouncySpec
 import com.sosauce.nekobites.components.LazyRowWithScrollButton
 
 @Composable

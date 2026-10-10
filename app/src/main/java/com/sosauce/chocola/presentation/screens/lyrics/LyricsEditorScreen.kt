@@ -44,8 +44,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sosauce.chocola.R
 import com.sosauce.chocola.domain.model.Lyrics
 import com.sosauce.chocola.presentation.components.CuteListItem
-import com.sosauce.chocola.utils.rememberFocusRequester
-import com.sosauce.chocola.utils.toLyricDuration
+import com.sosauce.chocola.core.presentation.util.rememberFocusRequester
+import com.sosauce.chocola.core.presentation.util.toLyricDuration
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.components.NoXFound
 import com.sosauce.nekobites.components.Spacer

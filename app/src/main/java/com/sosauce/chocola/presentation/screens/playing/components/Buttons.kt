@@ -31,7 +31,7 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberSeekButtonsDuration
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlayerActions
-import com.sosauce.chocola.utils.rememberInteractionSource
+import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.nekobites.animations.AnimatedDrawable
 import com.sosauce.nekobites.animations.AnimatedDrawableFile
 

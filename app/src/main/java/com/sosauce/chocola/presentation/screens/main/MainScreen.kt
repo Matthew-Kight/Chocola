@@ -47,10 +47,10 @@ import com.sosauce.chocola.presentation.components.NoResult
 import com.sosauce.chocola.presentation.components.TracksSelectedBar
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.main.components.FolderHeader
-import com.sosauce.chocola.utils.addOrRemove
-import com.sosauce.chocola.utils.barsContentTransform
-import com.sosauce.chocola.utils.copyMutate
-import com.sosauce.chocola.utils.selfAlignHorizontally
+import com.sosauce.chocola.core.domain.util.addOrRemove
+import com.sosauce.chocola.core.presentation.util.barsContentTransform
+import com.sosauce.chocola.core.domain.util.copyMutate
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.components.LoadingBox
 import com.sosauce.nekobites.components.NoXFound

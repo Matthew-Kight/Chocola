@@ -2,7 +2,7 @@ package com.sosauce.chocola.data.playlist
 
 import android.content.Context
 import android.provider.MediaStore
-import com.sosauce.chocola.utils.observe
+import com.sosauce.chocola.core.data.content.observe
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.combine

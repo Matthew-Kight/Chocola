@@ -25,7 +25,7 @@ import com.sosauce.chocola.data.datastore.rememberPaletteStyle
 import com.sosauce.chocola.data.datastore.rememberUseArtTheme
 import com.sosauce.chocola.data.datastore.rememberUseSystemFont
 import com.sosauce.chocola.core.designsystem.CuteTheme
-import com.sosauce.chocola.utils.toPaletteStyle
+import com.sosauce.chocola.core.presentation.util.toPaletteStyle
 
 @Composable
 fun ChocolaTheme(

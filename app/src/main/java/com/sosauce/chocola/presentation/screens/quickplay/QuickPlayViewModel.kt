@@ -16,8 +16,8 @@ import androidx.media3.exoplayer.ExoPlayer
 import com.sosauce.chocola.data.models.CuteTrack
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlayerActions
-import com.sosauce.chocola.utils.changeRepeatMode
-import com.sosauce.chocola.utils.getUriFromByteArray
+import com.sosauce.chocola.core.presentation.util.changeRepeatMode
+import com.sosauce.chocola.core.data.content.getUriFromByteArray
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

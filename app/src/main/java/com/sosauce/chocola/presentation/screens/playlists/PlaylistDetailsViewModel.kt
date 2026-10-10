@@ -12,7 +12,7 @@ import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.models.CuteTrack
 import com.sosauce.chocola.data.models.Playlist
 import com.sosauce.chocola.data.playlist.PlaylistDao
-import com.sosauce.chocola.utils.search
+import com.sosauce.chocola.core.domain.library.search
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview

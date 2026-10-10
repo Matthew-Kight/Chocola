@@ -13,8 +13,8 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.models.Playlist
 import com.sosauce.chocola.data.playlist.PlaylistDao
-import com.sosauce.chocola.utils.combine
-import com.sosauce.chocola.utils.ordered
+import com.sosauce.chocola.core.domain.util.combine
+import com.sosauce.chocola.core.data.local.ordered
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow

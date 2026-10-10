@@ -44,10 +44,10 @@ import com.sosauce.chocola.presentation.screens.album.components.NumberOfTracks
 import com.sosauce.chocola.presentation.screens.playlists.components.EmptyPlaylist
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistHeader
 import com.sosauce.chocola.core.designsystem.CuteTheme
-import com.sosauce.chocola.utils.barsContentTransform
-import com.sosauce.chocola.utils.copyMutate
-import com.sosauce.chocola.utils.selfAlignHorizontally
-import com.sosauce.chocola.utils.toPaletteStyle
+import com.sosauce.chocola.core.presentation.util.barsContentTransform
+import com.sosauce.chocola.core.domain.util.copyMutate
+import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
+import com.sosauce.chocola.core.presentation.util.toPaletteStyle
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.components.LoadingBox
 import com.sosauce.nekobites.utils.ColorUtils.toColor
