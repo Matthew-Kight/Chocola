@@ -24,7 +24,7 @@ import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsInpu
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwitch
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
-import com.sosauce.chocola.utils.LyricsAlignment
+import com.sosauce.chocola.core.designsystem.LyricsAlignment
 import com.sosauce.nekobites.components.LazyRowWithScrollButton
 
 @Composable

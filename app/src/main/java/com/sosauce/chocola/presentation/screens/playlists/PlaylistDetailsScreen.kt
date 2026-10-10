@@ -43,7 +43,7 @@ import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.album.components.NumberOfTracks
 import com.sosauce.chocola.presentation.screens.playlists.components.EmptyPlaylist
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistHeader
-import com.sosauce.chocola.utils.CuteTheme
+import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.utils.barsContentTransform
 import com.sosauce.chocola.utils.copyMutate
 import com.sosauce.chocola.utils.selfAlignHorizontally

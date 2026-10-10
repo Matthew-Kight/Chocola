@@ -58,7 +58,7 @@ import com.sosauce.chocola.data.datastore.rememberNowPlayingShapeMorph
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.screens.lyrics.LyricsList
-import com.sosauce.chocola.utils.ArtworkShape
+import com.sosauce.chocola.core.designsystem.ArtworkShape
 import com.sosauce.nekobites.animations.rememberAnimatedShape
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest

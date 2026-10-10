@@ -34,6 +34,8 @@ import androidx.compose.ui.util.fastFilter
 import androidx.media3.common.Player
 import com.kyant.taglib.PropertyMap
 import com.materialkolor.PaletteStyle
+import com.sosauce.chocola.core.designsystem.CutePaletteStyle
+import com.sosauce.chocola.core.designsystem.LyricsAlignment
 import com.sosauce.chocola.data.datastore.SearchSettings
 import com.sosauce.chocola.data.models.Album
 import com.sosauce.chocola.data.models.Artist

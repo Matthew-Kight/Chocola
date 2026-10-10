@@ -29,7 +29,7 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.screens.main.Category
-import com.sosauce.chocola.utils.ICON_TEXT_SPACING
+import com.sosauce.chocola.core.designsystem.ICON_TEXT_SPACING
 
 @Composable
 fun FolderHeader(

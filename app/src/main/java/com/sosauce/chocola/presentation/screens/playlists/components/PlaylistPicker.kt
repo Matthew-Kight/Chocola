@@ -32,7 +32,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sosauce.chocola.R
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistViewModel
-import com.sosauce.chocola.utils.ICON_TEXT_SPACING
+import com.sosauce.chocola.core.designsystem.ICON_TEXT_SPACING
 import com.sosauce.chocola.utils.copyMutate
 import com.sosauce.chocola.utils.selfAlignHorizontally
 import org.koin.androidx.compose.koinViewModel

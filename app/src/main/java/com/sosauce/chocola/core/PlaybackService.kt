@@ -33,7 +33,7 @@ import com.sosauce.chocola.data.widgets.WIDGET_TITLE
 import com.sosauce.chocola.data.widgets.WidgetsHelper
 import com.sosauce.chocola.domain.EqualizerManager
 import com.sosauce.chocola.domain.helpers.AndroidAutoHelper
-import com.sosauce.chocola.utils.CUTE_MUSIC_ID
+import com.sosauce.chocola.core.designsystem.CUTE_MUSIC_ID
 import com.sosauce.chocola.utils.playOrPause
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

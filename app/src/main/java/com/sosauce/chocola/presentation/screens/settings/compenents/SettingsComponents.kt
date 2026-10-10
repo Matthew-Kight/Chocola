@@ -63,8 +63,8 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberAppTheme
 import com.sosauce.chocola.data.models.EqualizerPreset
 import com.sosauce.chocola.presentation.screens.playing.components.WavySlider
-import com.sosauce.chocola.utils.ArtworkShape
-import com.sosauce.chocola.utils.CuteTheme
+import com.sosauce.chocola.core.designsystem.ArtworkShape
+import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.utils.NumbersOnlyTransformation
 import com.sosauce.chocola.utils.rememberFocusRequester
 import com.sosauce.chocola.utils.toPaletteStyle

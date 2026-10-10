@@ -31,8 +31,8 @@ import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwit
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
 import com.sosauce.chocola.presentation.theme.anyDarkColorScheme
 import com.sosauce.chocola.presentation.theme.anyLightColorScheme
-import com.sosauce.chocola.utils.CutePaletteStyle
-import com.sosauce.chocola.utils.CuteTheme
+import com.sosauce.chocola.core.designsystem.CutePaletteStyle
+import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.nekobites.components.LazyRowWithScrollButton
 
 @Composable

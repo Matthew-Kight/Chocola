@@ -111,7 +111,7 @@ import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playing.NowPlaying
 import com.sosauce.chocola.presentation.screens.playing.components.PlayPauseButton
 import com.sosauce.chocola.utils.LocalScreen
-import com.sosauce.chocola.utils.SharedTransitionKeys
+import com.sosauce.chocola.core.designsystem.SharedTransitionKeys
 import com.sosauce.chocola.utils.bouncySpec
 import com.sosauce.chocola.utils.rememberInteractionSource
 import com.sosauce.nekobites.animations.AnimatedDrawable

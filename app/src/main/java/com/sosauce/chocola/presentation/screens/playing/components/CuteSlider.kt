@@ -44,8 +44,8 @@ import com.sosauce.chocola.data.datastore.rememberThumbStyle
 import com.sosauce.chocola.data.datastore.rememberTrackStyle
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlayerActions
-import com.sosauce.chocola.utils.ThumbStyle
-import com.sosauce.chocola.utils.TrackStyle
+import com.sosauce.chocola.core.designsystem.ThumbStyle
+import com.sosauce.chocola.core.designsystem.TrackStyle
 
 @Composable
 fun CuteSlider(

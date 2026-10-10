@@ -33,9 +33,9 @@ import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwit
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
 import com.sosauce.chocola.presentation.screens.settings.compenents.ShapeSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SquareSelector
-import com.sosauce.chocola.utils.ArtworkShape
-import com.sosauce.chocola.utils.ThumbStyle
-import com.sosauce.chocola.utils.TrackStyle
+import com.sosauce.chocola.core.designsystem.ArtworkShape
+import com.sosauce.chocola.core.designsystem.ThumbStyle
+import com.sosauce.chocola.core.designsystem.TrackStyle
 import com.sosauce.nekobites.components.LazyRowWithScrollButton
 
 @Composable
