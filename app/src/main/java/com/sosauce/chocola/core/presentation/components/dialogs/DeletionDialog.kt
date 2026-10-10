@@ -51,7 +51,7 @@ import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.data.local.Playlist
-import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
+import com.sosauce.chocola.feature.playlists.presentation.PlaylistActions
 import kotlinx.coroutines.flow.collectLatest
 import org.koin.androidx.compose.koinViewModel
 import sv.lib.squircleshape.CornerSmoothing

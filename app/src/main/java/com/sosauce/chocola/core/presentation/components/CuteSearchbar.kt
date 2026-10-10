@@ -108,7 +108,7 @@ import com.sosauce.chocola.core.presentation.preferences.rememberTrackSort
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.core.presentation.navigation.Screen
-import com.sosauce.chocola.presentation.screens.playing.NowPlaying
+import com.sosauce.chocola.feature.playing.presentation.NowPlaying
 import com.sosauce.chocola.core.designsystem.components.PlayPauseButton
 import com.sosauce.chocola.core.presentation.navigation.LocalScreen
 import com.sosauce.chocola.core.designsystem.SharedTransitionKeys

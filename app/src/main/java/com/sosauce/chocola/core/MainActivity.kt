@@ -13,7 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import com.sosauce.chocola.core.data.local.PlaylistCleanup
 import com.sosauce.chocola.core.presentation.player.MusicViewModel
 import com.sosauce.chocola.presentation.navigation.Nav
-import com.sosauce.chocola.presentation.screens.setup.SetupScreen
+import com.sosauce.chocola.feature.setup.presentation.SetupScreen
 import com.sosauce.chocola.core.designsystem.theme.ChocolaTheme
 import com.sosauce.chocola.core.presentation.util.hasMusicPermission
 import kotlinx.coroutines.launch

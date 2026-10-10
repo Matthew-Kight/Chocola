@@ -30,10 +30,10 @@ import androidx.compose.ui.util.fastAny
 import androidx.compose.ui.util.fastForEach
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sosauce.chocola.R
-import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
-import com.sosauce.chocola.presentation.screens.playlists.PlaylistViewModel
-import com.sosauce.chocola.presentation.screens.playlists.components.CreatePlaylistDialog
-import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistItem
+import com.sosauce.chocola.feature.playlists.presentation.PlaylistActions
+import com.sosauce.chocola.feature.playlists.presentation.PlaylistViewModel
+import com.sosauce.chocola.feature.playlists.presentation.components.CreatePlaylistDialog
+import com.sosauce.chocola.feature.playlists.presentation.components.PlaylistItem
 import com.sosauce.chocola.core.designsystem.ICON_TEXT_SPACING
 import com.sosauce.chocola.core.domain.util.copyMutate
 import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
