@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.navigation
+package com.sosauce.chocola.app.navigation
 
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey

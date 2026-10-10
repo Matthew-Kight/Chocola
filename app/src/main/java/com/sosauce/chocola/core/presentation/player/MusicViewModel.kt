@@ -28,7 +28,7 @@ import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.toBitmap
 import com.google.common.util.concurrent.MoreExecutors
-import com.sosauce.chocola.core.PlaybackService
+import com.sosauce.chocola.app.PlaybackService
 import com.sosauce.chocola.core.data.library.AbstractTracksScanner
 import com.sosauce.chocola.core.data.lyrics.LyricsParser
 import com.sosauce.chocola.core.data.datastore.UserPreferences

@@ -8,8 +8,8 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.glance.appwidget.GlanceAppWidgetManager
 import androidx.glance.appwidget.state.updateAppWidgetState
-import com.sosauce.chocola.presentation.widgets.MusicWidget2x1
-import com.sosauce.chocola.presentation.widgets.MusicWidget4x1
+import com.sosauce.chocola.app.widgets.MusicWidget2x1
+import com.sosauce.chocola.app.widgets.MusicWidget4x1
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 

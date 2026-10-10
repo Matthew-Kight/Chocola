@@ -1,13 +1,13 @@
 @file:OptIn(KoinExperimentalAPI::class)
 
-package com.sosauce.chocola.core
+package com.sosauce.chocola.app
 
 import android.app.Application
 import coil3.ImageLoader
 import coil3.PlatformContext
 import coil3.SingletonImageLoader
 import coil3.request.crossfade
-import com.sosauce.chocola.di.appModule
+import com.sosauce.chocola.app.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.androix.startup.KoinStartup
 import org.koin.core.annotation.KoinExperimentalAPI

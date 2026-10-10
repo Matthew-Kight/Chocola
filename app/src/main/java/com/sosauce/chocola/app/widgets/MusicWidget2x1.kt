@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.widgets
+package com.sosauce.chocola.app.widgets
 
 import android.content.Context
 import android.content.Intent
@@ -32,8 +32,8 @@ import androidx.glance.layout.padding
 import androidx.glance.layout.width
 import androidx.glance.unit.ColorProvider
 import com.sosauce.chocola.R
-import com.sosauce.chocola.core.MainActivity
-import com.sosauce.chocola.core.PlaybackService
+import com.sosauce.chocola.app.MainActivity
+import com.sosauce.chocola.app.PlaybackService
 import com.sosauce.chocola.core.data.widgets.WIDGET_IS_PLAYING
 
 

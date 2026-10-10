@@ -1,4 +1,4 @@
-package com.sosauce.chocola.di
+package com.sosauce.chocola.app.di
 
 import androidx.room.Room
 import com.sosauce.chocola.core.data.library.AbstractTracksScanner

@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalSharedTransitionApi::class)
 
-package com.sosauce.chocola.presentation.navigation
+package com.sosauce.chocola.app.navigation
 
 import android.app.Activity
 import android.widget.Toast

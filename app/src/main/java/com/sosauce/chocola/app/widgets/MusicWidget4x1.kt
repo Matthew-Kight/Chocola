@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.widgets
+package com.sosauce.chocola.app.widgets
 
 import android.content.Context
 import android.content.Intent
@@ -37,8 +37,8 @@ import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
 import com.sosauce.chocola.R
-import com.sosauce.chocola.core.MainActivity
-import com.sosauce.chocola.core.PlaybackService
+import com.sosauce.chocola.app.MainActivity
+import com.sosauce.chocola.app.PlaybackService
 import com.sosauce.chocola.core.data.widgets.WIDGET_ART
 import com.sosauce.chocola.core.data.widgets.WIDGET_ARTIST
 import com.sosauce.chocola.core.data.widgets.WIDGET_IS_PLAYING

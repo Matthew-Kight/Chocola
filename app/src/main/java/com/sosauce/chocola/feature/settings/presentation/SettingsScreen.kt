@@ -37,8 +37,8 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.core.presentation.navigation.Screen
-import com.sosauce.chocola.presentation.navigation.navigate
-import com.sosauce.chocola.presentation.navigation.navigateBack
+import com.sosauce.chocola.app.navigation.navigate
+import com.sosauce.chocola.app.navigation.navigateBack
 import com.sosauce.chocola.feature.playing.presentation.aod.AlwaysOnDisplay
 import com.sosauce.chocola.feature.settings.presentation.components.AboutCard
 import com.sosauce.chocola.feature.settings.presentation.components.SettingsCategoryCard

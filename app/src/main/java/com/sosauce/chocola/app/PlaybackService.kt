@@ -1,6 +1,6 @@
 @file:kotlin.OptIn(ExperimentalCoroutinesApi::class)
 
-package com.sosauce.chocola.core
+package com.sosauce.chocola.app
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
