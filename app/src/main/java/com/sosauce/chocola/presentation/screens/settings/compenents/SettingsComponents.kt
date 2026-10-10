@@ -62,7 +62,7 @@ import com.materialkolor.rememberDynamicMaterialThemeState
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.presentation.preferences.rememberAppTheme
 import com.sosauce.chocola.core.domain.model.EqualizerPreset
-import com.sosauce.chocola.presentation.screens.playing.components.WavySlider
+import com.sosauce.chocola.core.designsystem.components.WavySlider
 import com.sosauce.chocola.core.designsystem.ArtworkShape
 import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.utils.NumbersOnlyTransformation

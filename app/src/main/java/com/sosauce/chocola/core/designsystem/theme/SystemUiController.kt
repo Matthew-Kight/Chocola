@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.theme
+package com.sosauce.chocola.core.designsystem.theme
 
 import android.view.Window
 import androidx.core.view.WindowCompat

@@ -3,7 +3,7 @@
     ExperimentalSharedTransitionApi::class, ExperimentalMaterial3ExpressiveApi::class
 )
 
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.animateColorAsState
@@ -58,11 +58,11 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.core.presentation.preferences.rememberHiddenTracks
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
-import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
-import com.sosauce.chocola.presentation.navigation.Screen
-import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
-import com.sosauce.chocola.utils.LocalScreen
+import com.sosauce.chocola.core.presentation.components.dialogs.DeletionDialog
+import com.sosauce.chocola.core.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
+import com.sosauce.chocola.core.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.LocalScreen
+import com.sosauce.chocola.core.designsystem.components.CuteListItem
 import com.sosauce.chocola.core.domain.util.copyMutate
 import com.sosauce.nekobites.animations.AnimatedDrawable
 import com.sosauce.nekobites.animations.AnimatedDrawableFile

@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.screens.playing.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn

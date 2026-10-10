@@ -35,11 +35,11 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.model.Artist
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.CuteListItem
-import com.sosauce.chocola.presentation.components.CuteSearchbar
-import com.sosauce.chocola.presentation.components.CuteSearchbarDefaults
-import com.sosauce.chocola.presentation.components.NoResult
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.designsystem.components.CuteListItem
+import com.sosauce.chocola.core.presentation.components.CuteSearchbar
+import com.sosauce.chocola.core.presentation.components.CuteSearchbarDefaults
+import com.sosauce.chocola.core.designsystem.components.NoResult
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.utils.ImageUtils
 import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.components.LoadingBox

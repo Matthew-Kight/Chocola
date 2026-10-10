@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.screens.playing.components
+package com.sosauce.chocola.core.designsystem.components
 
 import android.text.format.DateUtils
 import androidx.compose.animation.AnimatedVisibility

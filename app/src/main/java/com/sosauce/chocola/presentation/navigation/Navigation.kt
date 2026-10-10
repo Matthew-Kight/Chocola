@@ -33,7 +33,7 @@ import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.presentation.preferences.rememberInitialScreenBlocking
-import com.sosauce.chocola.presentation.components.MusicViewModel
+import com.sosauce.chocola.core.presentation.player.MusicViewModel
 import com.sosauce.chocola.presentation.screens.album.AlbumDetailsScreen
 import com.sosauce.chocola.presentation.screens.album.AlbumDetailsViewModel
 import com.sosauce.chocola.presentation.screens.album.AlbumsScreen
@@ -56,7 +56,8 @@ import com.sosauce.chocola.presentation.screens.playlists.PlaylistDetailsViewMod
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistViewModel
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistsScreen
 import com.sosauce.chocola.presentation.screens.settings.SettingsScreen
-import com.sosauce.chocola.utils.LocalScreen
+import com.sosauce.chocola.core.presentation.navigation.LocalScreen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.nekobites.helpers.ObserveAsEvents
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf

@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.components.dialogs.tracksDetails
+package com.sosauce.chocola.core.presentation.components.dialogs.tracksDetails
 
 import android.app.Application
 import android.provider.MediaStore

@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.screens.artist.components
+package com.sosauce.chocola.core.designsystem.components
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme

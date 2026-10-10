@@ -13,9 +13,9 @@ import com.sosauce.chocola.core.data.library.SafManager
 import com.sosauce.chocola.core.data.widgets.WidgetsHelper
 import com.sosauce.chocola.core.data.audio.EqualizerManager
 import com.sosauce.chocola.core.data.auto.AndroidAutoHelper
-import com.sosauce.chocola.presentation.components.MusicViewModel
-import com.sosauce.chocola.presentation.components.dialogs.DeletionViewModel
-import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialogViewModel
+import com.sosauce.chocola.core.presentation.player.MusicViewModel
+import com.sosauce.chocola.core.presentation.components.dialogs.DeletionViewModel
+import com.sosauce.chocola.core.presentation.components.dialogs.tracksDetails.TracksDetailsDialogViewModel
 import com.sosauce.chocola.presentation.screens.album.AlbumDetailsViewModel
 import com.sosauce.chocola.presentation.screens.album.AlbumsViewModel
 import com.sosauce.chocola.presentation.screens.artist.ArtistDetailsViewModel

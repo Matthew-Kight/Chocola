@@ -12,11 +12,11 @@ import androidx.compose.ui.graphics.Shape
 import androidx.graphics.shapes.CornerRounding
 import androidx.graphics.shapes.RoundedPolygon
 import androidx.graphics.shapes.rectangle
-import com.sosauce.chocola.presentation.screens.playing.components.ClassicThumb
-import com.sosauce.chocola.presentation.screens.playing.components.MorphingThumb
-import com.sosauce.chocola.presentation.screens.playing.components.StraightThumb
-import com.sosauce.chocola.presentation.screens.playing.components.StraightTrack
-import com.sosauce.chocola.presentation.screens.playing.components.WavyTrack
+import com.sosauce.chocola.core.designsystem.components.ClassicThumb
+import com.sosauce.chocola.core.designsystem.components.MorphingThumb
+import com.sosauce.chocola.core.designsystem.components.StraightThumb
+import com.sosauce.chocola.core.designsystem.components.StraightTrack
+import com.sosauce.chocola.core.designsystem.components.WavyTrack
 
 const val CUTE_MUSIC_ID = "CUTE_MUSIC_ID"
 const val ICON_TEXT_SPACING = 5

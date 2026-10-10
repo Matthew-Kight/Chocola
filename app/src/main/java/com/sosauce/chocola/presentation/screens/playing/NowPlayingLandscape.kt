@@ -28,16 +28,16 @@ import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.core.presentation.preferences.rememberSnapSpeedAndPitch
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
-import com.sosauce.chocola.presentation.navigation.Screen
-import com.sosauce.chocola.presentation.screens.playing.components.ActionButtonsRow
+import com.sosauce.chocola.core.presentation.components.dialogs.tracksDetails.TracksDetailsDialog
+import com.sosauce.chocola.core.presentation.navigation.Screen
+import com.sosauce.chocola.core.designsystem.components.ActionButtonsRow
 import com.sosauce.chocola.presentation.screens.playing.components.Artwork
-import com.sosauce.chocola.presentation.screens.playing.components.CuteSlider
+import com.sosauce.chocola.core.designsystem.components.CuteSlider
 import com.sosauce.chocola.presentation.screens.playing.components.PlayingTopRow
 import com.sosauce.chocola.presentation.screens.playing.components.QuickActionsRow
-import com.sosauce.chocola.presentation.screens.playing.components.SpeedCard
-import com.sosauce.chocola.presentation.screens.playing.components.TitleAndArtist
-import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
+import com.sosauce.chocola.core.presentation.components.SpeedCard
+import com.sosauce.chocola.core.presentation.components.TitleAndArtist
+import com.sosauce.chocola.core.presentation.components.PlaylistPicker
 
 @Composable
 fun NowPlayingLandscape(

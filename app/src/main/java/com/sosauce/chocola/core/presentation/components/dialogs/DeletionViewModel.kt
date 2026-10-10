@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.components.dialogs
+package com.sosauce.chocola.core.presentation.components.dialogs
 
 import android.app.Application
 import android.app.PendingIntent

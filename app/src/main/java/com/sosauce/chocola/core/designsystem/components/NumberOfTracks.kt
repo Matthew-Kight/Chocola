@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.screens.album.components
+package com.sosauce.chocola.core.designsystem.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding

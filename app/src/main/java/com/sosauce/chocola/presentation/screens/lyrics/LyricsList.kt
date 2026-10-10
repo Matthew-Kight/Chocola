@@ -54,7 +54,7 @@ import com.sosauce.chocola.core.presentation.preferences.rememberLyricsAlignment
 import com.sosauce.chocola.core.presentation.preferences.rememberLyricsFontSize
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.core.presentation.util.toLyricsAlignment
 import com.sosauce.nekobites.components.NoXFound
 import com.sosauce.nekobites.components.Spacer

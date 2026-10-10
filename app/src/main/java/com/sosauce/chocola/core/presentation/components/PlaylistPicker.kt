@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.screens.playlists.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -32,6 +32,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sosauce.chocola.R
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistViewModel
+import com.sosauce.chocola.presentation.screens.playlists.components.CreatePlaylistDialog
+import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistItem
 import com.sosauce.chocola.core.designsystem.ICON_TEXT_SPACING
 import com.sosauce.chocola.core.domain.util.copyMutate
 import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally

@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -33,8 +33,7 @@ import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
-import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker
+import com.sosauce.chocola.core.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.sweetselect.SweetSelectState
 

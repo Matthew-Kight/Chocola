@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.designsystem.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable

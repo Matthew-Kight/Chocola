@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.designsystem.components
 
 import android.view.ContextThemeWrapper
 import android.view.View

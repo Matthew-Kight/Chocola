@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 
 @Composable
 fun PlayingTopRow(

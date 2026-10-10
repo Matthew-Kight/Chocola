@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.sosauce.chocola.presentation.screens.playing.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
@@ -11,7 +11,7 @@ import androidx.compose.runtime.setValue
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.dialogs.SpeedAndPitchDialog
+import com.sosauce.chocola.core.presentation.components.dialogs.SpeedAndPitchDialog
 
 
 @Composable

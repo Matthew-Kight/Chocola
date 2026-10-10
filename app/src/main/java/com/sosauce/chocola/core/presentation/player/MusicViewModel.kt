@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalCoroutinesApi::class)
 
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.presentation.player
 
 import android.app.Application
 import android.content.ComponentName

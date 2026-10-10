@@ -3,7 +3,7 @@
     ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class
 )
 
-package com.sosauce.chocola.presentation.components
+package com.sosauce.chocola.core.presentation.components
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedContent
@@ -107,10 +107,10 @@ import com.sosauce.chocola.core.presentation.preferences.rememberSortTracksAscen
 import com.sosauce.chocola.core.presentation.preferences.rememberTrackSort
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playing.NowPlaying
-import com.sosauce.chocola.presentation.screens.playing.components.PlayPauseButton
-import com.sosauce.chocola.utils.LocalScreen
+import com.sosauce.chocola.core.designsystem.components.PlayPauseButton
+import com.sosauce.chocola.core.presentation.navigation.LocalScreen
 import com.sosauce.chocola.core.designsystem.SharedTransitionKeys
 import com.sosauce.chocola.core.presentation.util.bouncySpec
 import com.sosauce.chocola.core.presentation.util.rememberInteractionSource

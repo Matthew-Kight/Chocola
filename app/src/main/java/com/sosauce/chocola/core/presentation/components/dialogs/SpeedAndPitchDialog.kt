@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.components.dialogs
+package com.sosauce.chocola.core.presentation.components.dialogs
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -40,8 +40,8 @@ import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.screens.playing.components.SpeedCardContent
-import com.sosauce.chocola.presentation.screens.playing.components.WavySlider
+import com.sosauce.chocola.core.presentation.components.SpeedCardContent
+import com.sosauce.chocola.core.designsystem.components.WavySlider
 
 @Composable
 fun SpeedAndPitchDialog(

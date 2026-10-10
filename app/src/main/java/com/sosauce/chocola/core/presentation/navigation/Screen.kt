@@ -1,4 +1,4 @@
-package com.sosauce.chocola.presentation.navigation
+package com.sosauce.chocola.core.presentation.navigation
 
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable

@@ -51,9 +51,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.fastForEachIndexed
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.data.local.Playlist
-import com.sosauce.chocola.presentation.components.CuteListItem
-import com.sosauce.chocola.presentation.components.MoreOptions
-import com.sosauce.chocola.presentation.components.dialogs.PlaylistDeletionDialog
+import com.sosauce.chocola.core.designsystem.components.CuteListItem
+import com.sosauce.chocola.core.presentation.components.MoreOptions
+import com.sosauce.chocola.core.presentation.components.dialogs.PlaylistDeletionDialog
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
 import com.sosauce.nekobites.components.AnimatedSelectedIcon
 import sv.lib.squircleshape.CornerSmoothing

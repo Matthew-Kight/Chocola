@@ -43,10 +43,10 @@ import com.sosauce.chocola.core.domain.model.Folder
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlaySource
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.components.CuteListItem
-import com.sosauce.chocola.presentation.components.DefaultMusicListItemTrailingContent
-import com.sosauce.chocola.presentation.components.MusicListItem
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.designsystem.components.CuteListItem
+import com.sosauce.chocola.core.presentation.components.DefaultMusicListItemTrailingContent
+import com.sosauce.chocola.core.presentation.components.MusicListItem
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.settings.compenents.ClickableSettingsCard
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle
 import com.sosauce.chocola.presentation.screens.settings.compenents.SliderSettingsCards

@@ -60,7 +60,7 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.kyant.taglib.Picture
 import com.sosauce.chocola.R
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.animations.AnimatedFab
 import com.sosauce.nekobites.components.ThreadDivider

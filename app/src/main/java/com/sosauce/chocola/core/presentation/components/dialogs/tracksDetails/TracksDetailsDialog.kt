@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package com.sosauce.chocola.presentation.components.dialogs.tracksDetails
+package com.sosauce.chocola.core.presentation.components.dialogs.tracksDetails
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.basicMarquee

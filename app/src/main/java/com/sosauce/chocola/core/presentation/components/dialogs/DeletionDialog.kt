@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
 
-package com.sosauce.chocola.presentation.components.dialogs
+package com.sosauce.chocola.core.presentation.components.dialogs
 
 import android.app.Activity
 import android.widget.Toast

@@ -36,7 +36,7 @@ import androidx.navigation3.ui.NavDisplay
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.navigation.navigate
 import com.sosauce.chocola.presentation.navigation.navigateBack
 import com.sosauce.chocola.presentation.screens.aod.AlwaysOnDisplay

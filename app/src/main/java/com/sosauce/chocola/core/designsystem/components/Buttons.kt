@@ -3,7 +3,7 @@
     ExperimentalMaterial3ExpressiveApi::class
 )
 
-package com.sosauce.chocola.presentation.screens.playing.components
+package com.sosauce.chocola.core.designsystem.components
 
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.core.animateFloatAsState

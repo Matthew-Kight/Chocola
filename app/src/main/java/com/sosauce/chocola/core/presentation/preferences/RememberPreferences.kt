@@ -53,7 +53,7 @@ import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.core.designsystem.LyricsAlignment
 import com.sosauce.chocola.core.designsystem.ThumbStyle
 import com.sosauce.chocola.core.designsystem.TrackStyle
-import com.sosauce.chocola.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.navigation.Screen
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.mapLatest
