@@ -34,7 +34,7 @@ import androidx.glance.unit.ColorProvider
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.MainActivity
 import com.sosauce.chocola.core.PlaybackService
-import com.sosauce.chocola.data.widgets.WIDGET_IS_PLAYING
+import com.sosauce.chocola.core.data.widgets.WIDGET_IS_PLAYING
 
 
 object MusicWidget2x1 : GlanceAppWidget() {

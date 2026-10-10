@@ -1,7 +1,7 @@
 package com.sosauce.chocola.presentation.screens.playlists
 
 import android.net.Uri
-import com.sosauce.chocola.data.models.Playlist
+import com.sosauce.chocola.core.data.local.Playlist
 
 sealed interface PlaylistActions {
 

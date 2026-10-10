@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data
+package com.sosauce.chocola.core.data.local
 
 import androidx.room.TypeConverter
 import kotlinx.serialization.json.Json

@@ -16,7 +16,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberInitialScreen
+import com.sosauce.chocola.core.presentation.preferences.rememberInitialScreen
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle

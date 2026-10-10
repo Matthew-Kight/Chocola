@@ -25,7 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.model.CuteTrack
-import com.sosauce.chocola.data.models.Playlist
+import com.sosauce.chocola.core.data.local.Playlist
 import com.sosauce.chocola.core.domain.player.PlaySource
 import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.nekobites.animations.AnimatedFab

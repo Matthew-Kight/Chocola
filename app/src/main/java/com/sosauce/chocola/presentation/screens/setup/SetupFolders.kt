@@ -28,8 +28,8 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.rememberViewModelStoreOwner
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberMinTrackDuration
-import com.sosauce.chocola.data.datastore.rememberWhitelistedFolders
+import com.sosauce.chocola.core.presentation.preferences.rememberMinTrackDuration
+import com.sosauce.chocola.core.presentation.preferences.rememberWhitelistedFolders
 import com.sosauce.chocola.presentation.screens.settings.FoldersViewModel
 import com.sosauce.chocola.presentation.screens.settings.compenents.SliderSettingsCards
 import com.sosauce.chocola.presentation.screens.settings.compenents.foldersView

@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.widgets
+package com.sosauce.chocola.core.data.widgets
 
 import android.content.Context
 import android.util.Base64

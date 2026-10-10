@@ -17,9 +17,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberArtLyrics
-import com.sosauce.chocola.data.datastore.rememberLyricsAlignment
-import com.sosauce.chocola.data.datastore.rememberLyricsFontSize
+import com.sosauce.chocola.core.presentation.preferences.rememberArtLyrics
+import com.sosauce.chocola.core.presentation.preferences.rememberLyricsAlignment
+import com.sosauce.chocola.core.presentation.preferences.rememberLyricsFontSize
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsInput
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwitch

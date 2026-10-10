@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data
+package com.sosauce.chocola.core.data.lyrics
 
 import android.annotation.SuppressLint
 import android.content.Context

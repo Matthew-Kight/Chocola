@@ -29,10 +29,10 @@ import coil3.request.ImageRequest
 import coil3.toBitmap
 import com.google.common.util.concurrent.MoreExecutors
 import com.sosauce.chocola.core.PlaybackService
-import com.sosauce.chocola.data.AbstractTracksScanner
-import com.sosauce.chocola.data.LyricsParser
-import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.mappers.toMediaItem
+import com.sosauce.chocola.core.data.library.AbstractTracksScanner
+import com.sosauce.chocola.core.data.lyrics.LyricsParser
+import com.sosauce.chocola.core.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.mapper.toMediaItem
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlaySource
 import com.sosauce.chocola.core.domain.player.PlayerActions

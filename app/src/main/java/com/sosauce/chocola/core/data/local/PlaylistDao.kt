@@ -1,10 +1,9 @@
-package com.sosauce.chocola.data.playlist
+package com.sosauce.chocola.core.data.local
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Query
 import androidx.room.Upsert
-import com.sosauce.chocola.data.models.Playlist
 import kotlinx.coroutines.flow.Flow
 
 @Dao

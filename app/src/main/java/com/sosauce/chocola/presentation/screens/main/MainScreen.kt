@@ -33,8 +33,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastForEach
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberGroupByFolders
-import com.sosauce.chocola.data.datastore.rememberHiddenFolders
+import com.sosauce.chocola.core.presentation.preferences.rememberGroupByFolders
+import com.sosauce.chocola.core.presentation.preferences.rememberHiddenFolders
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlaySource

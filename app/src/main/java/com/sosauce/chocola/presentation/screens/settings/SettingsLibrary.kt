@@ -35,9 +35,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastMap
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberAllSafTracks
-import com.sosauce.chocola.data.datastore.rememberMinTrackDuration
-import com.sosauce.chocola.data.datastore.rememberWhitelistedFolders
+import com.sosauce.chocola.core.presentation.preferences.rememberAllSafTracks
+import com.sosauce.chocola.core.presentation.preferences.rememberMinTrackDuration
+import com.sosauce.chocola.core.presentation.preferences.rememberWhitelistedFolders
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.model.Folder
 import com.sosauce.chocola.core.domain.player.MusicState

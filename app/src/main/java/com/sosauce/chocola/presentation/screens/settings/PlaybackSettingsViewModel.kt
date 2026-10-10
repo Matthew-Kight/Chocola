@@ -3,10 +3,10 @@ package com.sosauce.chocola.presentation.screens.settings
 import androidx.collection.FloatList
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sosauce.chocola.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.datastore.UserPreferences
 import com.sosauce.chocola.core.domain.model.EqualizerBand
 import com.sosauce.chocola.core.domain.model.EqualizerPreset
-import com.sosauce.chocola.domain.EqualizerManager
+import com.sosauce.chocola.core.data.audio.EqualizerManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest

@@ -7,10 +7,10 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.util.fastFilter
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sosauce.chocola.data.AbstractTracksScanner
-import com.sosauce.chocola.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.library.AbstractTracksScanner
+import com.sosauce.chocola.core.data.datastore.UserPreferences
 import com.sosauce.chocola.core.domain.model.Album
-import com.sosauce.chocola.data.repositories.IDRepositories
+import com.sosauce.chocola.core.data.library.IDRepositories
 import com.sosauce.chocola.core.domain.library.orderAlbumTrackNumber
 import com.sosauce.chocola.core.domain.library.search
 import kotlinx.coroutines.Dispatchers

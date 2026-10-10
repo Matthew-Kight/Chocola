@@ -26,8 +26,8 @@ import com.materialkolor.DynamicMaterialExpressiveTheme
 import com.materialkolor.dynamiccolor.ColorSpec
 import com.materialkolor.rememberDynamicMaterialThemeState
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberAppTheme
-import com.sosauce.chocola.data.datastore.rememberPaletteStyle
+import com.sosauce.chocola.core.presentation.preferences.rememberAppTheme
+import com.sosauce.chocola.core.presentation.preferences.rememberPaletteStyle
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlaySource

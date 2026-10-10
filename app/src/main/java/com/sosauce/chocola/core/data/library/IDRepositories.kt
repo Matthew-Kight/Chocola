@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.repositories
+package com.sosauce.chocola.core.data.library
 
 import android.content.Context
 import android.provider.MediaStore

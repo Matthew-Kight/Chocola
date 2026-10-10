@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.models
+package com.sosauce.chocola.core.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

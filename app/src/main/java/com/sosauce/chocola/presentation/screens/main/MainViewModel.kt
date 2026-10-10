@@ -8,8 +8,8 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.snapshotFlow
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.sosauce.chocola.data.AbstractTracksScanner
-import com.sosauce.chocola.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.library.AbstractTracksScanner
+import com.sosauce.chocola.core.data.datastore.UserPreferences
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.library.search
 import kotlinx.coroutines.Dispatchers

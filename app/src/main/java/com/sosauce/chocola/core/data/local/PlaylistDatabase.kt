@@ -1,12 +1,10 @@
-package com.sosauce.chocola.data.playlist
+package com.sosauce.chocola.core.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.sosauce.chocola.data.MediaItemConverter
-import com.sosauce.chocola.data.models.Playlist
 
 @Database(
     entities = [Playlist::class],

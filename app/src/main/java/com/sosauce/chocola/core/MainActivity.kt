@@ -10,7 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
-import com.sosauce.chocola.data.playlist.PlaylistCleanup
+import com.sosauce.chocola.core.data.local.PlaylistCleanup
 import com.sosauce.chocola.presentation.components.MusicViewModel
 import com.sosauce.chocola.presentation.navigation.Nav
 import com.sosauce.chocola.presentation.screens.setup.SetupScreen

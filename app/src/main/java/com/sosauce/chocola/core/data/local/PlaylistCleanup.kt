@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.playlist
+package com.sosauce.chocola.core.data.local
 
 import android.content.Context
 import android.provider.MediaStore

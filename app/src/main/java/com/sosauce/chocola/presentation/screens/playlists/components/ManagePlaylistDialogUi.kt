@@ -15,7 +15,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.emoji2.emojipicker.EmojiPickerView
-import com.sosauce.chocola.data.models.Playlist
+import com.sosauce.chocola.core.data.local.Playlist
 
 /**
  * Unified UI for creating and editing a playlist, not a dialog.

@@ -20,10 +20,10 @@ import com.materialkolor.DynamicMaterialExpressiveTheme
 import com.materialkolor.dynamiccolor.ColorSpec
 import com.materialkolor.rememberDynamicMaterialThemeState
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberAppTheme
-import com.sosauce.chocola.data.datastore.rememberPaletteStyle
-import com.sosauce.chocola.data.datastore.rememberUseArtTheme
-import com.sosauce.chocola.data.datastore.rememberUseSystemFont
+import com.sosauce.chocola.core.presentation.preferences.rememberAppTheme
+import com.sosauce.chocola.core.presentation.preferences.rememberPaletteStyle
+import com.sosauce.chocola.core.presentation.preferences.rememberUseArtTheme
+import com.sosauce.chocola.core.presentation.preferences.rememberUseSystemFont
 import com.sosauce.chocola.core.designsystem.CuteTheme
 import com.sosauce.chocola.core.presentation.util.toPaletteStyle
 

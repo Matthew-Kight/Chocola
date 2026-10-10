@@ -19,11 +19,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberAppTheme
-import com.sosauce.chocola.data.datastore.rememberPaletteStyle
-import com.sosauce.chocola.data.datastore.rememberShowShuffleButton
-import com.sosauce.chocola.data.datastore.rememberUseArtTheme
-import com.sosauce.chocola.data.datastore.rememberUseSystemFont
+import com.sosauce.chocola.core.presentation.preferences.rememberAppTheme
+import com.sosauce.chocola.core.presentation.preferences.rememberPaletteStyle
+import com.sosauce.chocola.core.presentation.preferences.rememberShowShuffleButton
+import com.sosauce.chocola.core.presentation.preferences.rememberUseArtTheme
+import com.sosauce.chocola.core.presentation.preferences.rememberUseSystemFont
 import com.sosauce.chocola.presentation.screens.settings.compenents.PaletteSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsCardHeader
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSelector

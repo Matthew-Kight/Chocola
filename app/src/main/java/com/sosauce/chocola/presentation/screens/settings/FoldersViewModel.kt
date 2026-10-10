@@ -2,7 +2,7 @@ package com.sosauce.chocola.presentation.screens.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sosauce.chocola.data.repositories.FoldersRepository
+import com.sosauce.chocola.core.data.library.FoldersRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
 

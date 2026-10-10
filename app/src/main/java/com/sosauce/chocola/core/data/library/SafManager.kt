@@ -1,12 +1,12 @@
 @file:OptIn(ExperimentalCoroutinesApi::class)
 
-package com.sosauce.chocola.data.repositories
+package com.sosauce.chocola.core.data.library
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.net.toUri
 import com.kyant.taglib.TagLib
-import com.sosauce.chocola.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.datastore.UserPreferences
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.data.content.getUriFromByteArray
 import kotlinx.coroutines.Dispatchers

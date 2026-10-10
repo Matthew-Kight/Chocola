@@ -36,10 +36,10 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberEnableEqualizer
-import com.sosauce.chocola.data.datastore.rememberKeepAlive
-import com.sosauce.chocola.data.datastore.rememberPauseOnMute
-import com.sosauce.chocola.data.datastore.rememberSeekButtonsDuration
+import com.sosauce.chocola.core.presentation.preferences.rememberEnableEqualizer
+import com.sosauce.chocola.core.presentation.preferences.rememberKeepAlive
+import com.sosauce.chocola.core.presentation.preferences.rememberPauseOnMute
+import com.sosauce.chocola.core.presentation.preferences.rememberSeekButtonsDuration
 import com.sosauce.chocola.presentation.screens.settings.compenents.EqualizerPresetSelector
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsSwitch
 import com.sosauce.chocola.presentation.screens.settings.compenents.SettingsWithTitle

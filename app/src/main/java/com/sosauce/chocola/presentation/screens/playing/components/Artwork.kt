@@ -50,11 +50,11 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.skydoves.cloudy.cloudy
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberArtLyrics
-import com.sosauce.chocola.data.datastore.rememberArtworkShape
-import com.sosauce.chocola.data.datastore.rememberCarousel
-import com.sosauce.chocola.data.datastore.rememberIsLandscape
-import com.sosauce.chocola.data.datastore.rememberNowPlayingShapeMorph
+import com.sosauce.chocola.core.presentation.preferences.rememberArtLyrics
+import com.sosauce.chocola.core.presentation.preferences.rememberArtworkShape
+import com.sosauce.chocola.core.presentation.preferences.rememberCarousel
+import com.sosauce.chocola.core.presentation.preferences.rememberIsLandscape
+import com.sosauce.chocola.core.presentation.preferences.rememberNowPlayingShapeMorph
 import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.screens.lyrics.LyricsList

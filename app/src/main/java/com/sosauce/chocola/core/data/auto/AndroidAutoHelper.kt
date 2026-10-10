@@ -1,9 +1,9 @@
-package com.sosauce.chocola.domain.helpers
+package com.sosauce.chocola.core.data.auto
 
 import androidx.compose.ui.util.fastMap
 import androidx.media3.common.MediaItem
-import com.sosauce.chocola.data.AbstractTracksScanner
-import com.sosauce.chocola.data.mappers.toMediaItem
+import com.sosauce.chocola.core.data.library.AbstractTracksScanner
+import com.sosauce.chocola.core.data.mapper.toMediaItem
 
 class AndroidAutoHelper(
     private val abstractTracksScanner: AbstractTracksScanner

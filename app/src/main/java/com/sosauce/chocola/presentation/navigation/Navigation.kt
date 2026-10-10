@@ -32,7 +32,7 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.rememberInitialScreenBlocking
+import com.sosauce.chocola.core.presentation.preferences.rememberInitialScreenBlocking
 import com.sosauce.chocola.presentation.components.MusicViewModel
 import com.sosauce.chocola.presentation.screens.album.AlbumDetailsScreen
 import com.sosauce.chocola.presentation.screens.album.AlbumDetailsViewModel

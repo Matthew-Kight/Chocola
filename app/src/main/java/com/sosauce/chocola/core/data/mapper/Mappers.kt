@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.mappers
+package com.sosauce.chocola.core.data.mapper
 
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata

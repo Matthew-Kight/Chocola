@@ -10,9 +10,9 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.models.Playlist
-import com.sosauce.chocola.data.playlist.PlaylistDao
+import com.sosauce.chocola.core.data.datastore.UserPreferences
+import com.sosauce.chocola.core.data.local.Playlist
+import com.sosauce.chocola.core.data.local.PlaylistDao
 import com.sosauce.chocola.core.domain.util.combine
 import com.sosauce.chocola.core.data.local.ordered
 import kotlinx.coroutines.Dispatchers
