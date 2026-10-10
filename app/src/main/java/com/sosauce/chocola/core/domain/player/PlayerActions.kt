@@ -1,4 +1,4 @@
-package com.sosauce.chocola.domain.actions
+package com.sosauce.chocola.core.domain.player
 
 import android.net.Uri
 import com.sosauce.chocola.core.domain.model.CuteTrack

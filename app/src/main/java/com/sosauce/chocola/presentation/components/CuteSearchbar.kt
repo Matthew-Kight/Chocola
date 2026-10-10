@@ -105,8 +105,8 @@ import com.sosauce.chocola.data.datastore.rememberShowShuffleButton
 import com.sosauce.chocola.data.datastore.rememberSortAlbumsAscending
 import com.sosauce.chocola.data.datastore.rememberSortTracksAscending
 import com.sosauce.chocola.data.datastore.rememberTrackSort
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.screens.playing.NowPlaying
 import com.sosauce.chocola.presentation.screens.playing.components.PlayPauseButton

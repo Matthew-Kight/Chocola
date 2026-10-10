@@ -34,8 +34,8 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.presentation.navigation.navigate
 import com.sosauce.chocola.presentation.navigation.navigateBack

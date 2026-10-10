@@ -40,9 +40,9 @@ import com.sosauce.chocola.data.datastore.rememberMinTrackDuration
 import com.sosauce.chocola.data.datastore.rememberWhitelistedFolders
 import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.model.Folder
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlaySource
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlaySource
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.components.CuteListItem
 import com.sosauce.chocola.presentation.components.DefaultMusicListItemTrailingContent
 import com.sosauce.chocola.presentation.components.MusicListItem

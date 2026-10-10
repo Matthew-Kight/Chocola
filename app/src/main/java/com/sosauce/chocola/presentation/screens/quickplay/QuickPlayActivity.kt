@@ -42,7 +42,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.media3.common.Player
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.screens.playing.components.CuteSlider
 import com.sosauce.chocola.presentation.theme.ChocolaTheme
 import com.sosauce.nekobites.animations.AnimatedDrawable

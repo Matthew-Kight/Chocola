@@ -33,9 +33,9 @@ import com.sosauce.chocola.data.AbstractTracksScanner
 import com.sosauce.chocola.data.LyricsParser
 import com.sosauce.chocola.data.datastore.UserPreferences
 import com.sosauce.chocola.data.mappers.toMediaItem
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlaySource
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlaySource
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.core.presentation.util.changeRepeatMode
 import com.sosauce.chocola.core.domain.util.copyMutate
 import com.sosauce.chocola.core.domain.library.orderAlbumTrackNumber

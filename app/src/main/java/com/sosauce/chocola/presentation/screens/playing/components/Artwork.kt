@@ -55,8 +55,8 @@ import com.sosauce.chocola.data.datastore.rememberArtworkShape
 import com.sosauce.chocola.data.datastore.rememberCarousel
 import com.sosauce.chocola.data.datastore.rememberIsLandscape
 import com.sosauce.chocola.data.datastore.rememberNowPlayingShapeMorph
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.screens.lyrics.LyricsList
 import com.sosauce.chocola.core.designsystem.ArtworkShape
 import com.sosauce.nekobites.animations.rememberAnimatedShape

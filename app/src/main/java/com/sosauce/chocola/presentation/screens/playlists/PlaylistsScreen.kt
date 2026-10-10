@@ -41,8 +41,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.models.Playlist
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.components.CuteSearchbar
 import com.sosauce.chocola.presentation.components.NoResult
 import com.sosauce.chocola.presentation.components.SelectedBarSurface

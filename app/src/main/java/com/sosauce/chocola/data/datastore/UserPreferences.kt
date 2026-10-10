@@ -21,7 +21,7 @@ import com.sosauce.chocola.data.datastore.PreferencesKeys.SORT_PLAYLISTS_ASCENDI
 import com.sosauce.chocola.data.datastore.PreferencesKeys.SORT_TRACKS_ASCENDING
 import com.sosauce.chocola.data.datastore.PreferencesKeys.TRACK_SORT
 import com.sosauce.chocola.data.datastore.PreferencesKeys.WHITELISTED_FOLDERS
-import com.sosauce.chocola.data.states.MusicState
+import com.sosauce.chocola.core.domain.player.MusicState
 import com.sosauce.chocola.core.domain.model.AlbumSort
 import com.sosauce.chocola.core.domain.model.ArtistSort
 import com.sosauce.chocola.core.domain.model.PlaylistSort

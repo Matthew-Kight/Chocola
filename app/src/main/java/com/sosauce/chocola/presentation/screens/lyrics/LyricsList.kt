@@ -52,8 +52,8 @@ import androidx.compose.ui.unit.sp
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberLyricsAlignment
 import com.sosauce.chocola.data.datastore.rememberLyricsFontSize
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.navigation.Screen
 import com.sosauce.chocola.core.presentation.util.toLyricsAlignment
 import com.sosauce.nekobites.components.NoXFound

@@ -33,8 +33,8 @@ import androidx.navigation3.ui.LocalNavAnimatedContentScope
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
 import com.sosauce.chocola.core.domain.model.Artist
-import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.domain.actions.PlayerActions
+import com.sosauce.chocola.core.domain.player.MusicState
+import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.presentation.components.CuteListItem
 import com.sosauce.chocola.presentation.components.CuteSearchbar
 import com.sosauce.chocola.presentation.components.CuteSearchbarDefaults

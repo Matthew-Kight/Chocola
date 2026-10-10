@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.states
+package com.sosauce.chocola.core.domain.player
 
 import androidx.media3.common.Player
 import com.sosauce.chocola.core.domain.model.CuteTrack
