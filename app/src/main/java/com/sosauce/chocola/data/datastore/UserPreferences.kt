@@ -22,10 +22,12 @@ import com.sosauce.chocola.data.datastore.PreferencesKeys.SORT_TRACKS_ASCENDING
 import com.sosauce.chocola.data.datastore.PreferencesKeys.TRACK_SORT
 import com.sosauce.chocola.data.datastore.PreferencesKeys.WHITELISTED_FOLDERS
 import com.sosauce.chocola.data.states.MusicState
-import com.sosauce.chocola.utils.AlbumSort
-import com.sosauce.chocola.utils.ArtistSort
-import com.sosauce.chocola.utils.PlaylistSort
-import com.sosauce.chocola.utils.TrackSort
+import com.sosauce.chocola.core.domain.model.AlbumSort
+import com.sosauce.chocola.core.domain.model.ArtistSort
+import com.sosauce.chocola.core.domain.model.PlaylistSort
+import com.sosauce.chocola.core.domain.model.SearchSettings
+import com.sosauce.chocola.core.domain.model.TrackSort
+import com.sosauce.chocola.core.domain.model.TracksSettings
 import com.sosauce.chocola.core.domain.util.copyMutate
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
@@ -159,13 +161,3 @@ class UserPreferences(
 
 
 }
-
-data class TracksSettings(
-    val sort: TrackSort,
-    val ascending: Boolean
-)
-
-data class SearchSettings(
-    val regex: Boolean,
-    val matchCase: Boolean
-)

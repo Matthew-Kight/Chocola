@@ -61,7 +61,7 @@ import com.materialkolor.dynamiccolor.ColorSpec
 import com.materialkolor.rememberDynamicMaterialThemeState
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberAppTheme
-import com.sosauce.chocola.data.models.EqualizerPreset
+import com.sosauce.chocola.core.domain.model.EqualizerPreset
 import com.sosauce.chocola.presentation.screens.playing.components.WavySlider
 import com.sosauce.chocola.core.designsystem.ArtworkShape
 import com.sosauce.chocola.core.designsystem.CuteTheme

@@ -4,7 +4,7 @@ package com.sosauce.chocola.data.repositories
 
 import android.content.Context
 import android.provider.MediaStore
-import com.sosauce.chocola.data.models.Folder
+import com.sosauce.chocola.core.domain.model.Folder
 import com.sosauce.chocola.core.data.content.observe
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -24,7 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.data.models.Playlist
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions

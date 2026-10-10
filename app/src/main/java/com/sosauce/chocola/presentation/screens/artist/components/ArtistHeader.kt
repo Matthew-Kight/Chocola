@@ -25,8 +25,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation3.ui.LocalNavAnimatedContentScope
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.Artist
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.Artist
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.utils.ImageUtils

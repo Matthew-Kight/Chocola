@@ -19,7 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastMap
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.Folder
+import com.sosauce.chocola.core.domain.model.Folder
 
 
 fun LazyListScope.foldersView(

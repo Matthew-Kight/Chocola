@@ -1,4 +1,4 @@
-package com.sosauce.chocola.domain.model
+package com.sosauce.chocola.core.domain.model
 
 import kotlinx.serialization.Serializable
 import kotlin.random.Random

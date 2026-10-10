@@ -38,8 +38,8 @@ import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberAllSafTracks
 import com.sosauce.chocola.data.datastore.rememberMinTrackDuration
 import com.sosauce.chocola.data.datastore.rememberWhitelistedFolders
-import com.sosauce.chocola.data.models.CuteTrack
-import com.sosauce.chocola.data.models.Folder
+import com.sosauce.chocola.core.domain.model.CuteTrack
+import com.sosauce.chocola.core.domain.model.Folder
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions

@@ -41,7 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.nekobites.components.LoadingBox
 import com.sosauce.nekobites.helpers.ScopedViewModel
 import org.koin.androidx.compose.koinViewModel

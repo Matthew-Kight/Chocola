@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation3.ui.LocalNavAnimatedContentScope
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.Album
+import com.sosauce.chocola.core.domain.model.Album
 import com.sosauce.chocola.utils.ImageUtils
 
 @Composable

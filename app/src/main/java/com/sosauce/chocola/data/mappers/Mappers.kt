@@ -2,7 +2,7 @@ package com.sosauce.chocola.data.mappers
 
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 
 fun CuteTrack.toMediaItem(): MediaItem {
 

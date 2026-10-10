@@ -10,7 +10,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.sosauce.chocola.data.AbstractTracksScanner
 import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.core.domain.library.search
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview

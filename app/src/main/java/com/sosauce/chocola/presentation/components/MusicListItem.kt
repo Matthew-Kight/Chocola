@@ -56,7 +56,7 @@ import androidx.core.net.toUri
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberHiddenTracks
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.presentation.components.dialogs.tracksDetails.TracksDetailsDialog

@@ -1,4 +1,4 @@
-package com.sosauce.chocola.utils
+package com.sosauce.chocola.core.domain.model
 
 enum class AlbumSort {
     NAME,

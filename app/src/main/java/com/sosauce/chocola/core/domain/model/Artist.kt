@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.models
+package com.sosauce.chocola.core.domain.model
 
 /**
  * @param albumId Used to get artwork

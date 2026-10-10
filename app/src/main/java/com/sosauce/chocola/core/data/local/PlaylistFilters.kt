@@ -4,7 +4,7 @@ import androidx.compose.ui.util.fastFilter
 import com.sosauce.chocola.core.domain.util.regex
 import com.sosauce.chocola.core.domain.util.thenIf
 import com.sosauce.chocola.data.models.Playlist
-import com.sosauce.chocola.utils.PlaylistSort
+import com.sosauce.chocola.core.domain.model.PlaylistSort
 
 fun List<Playlist>.ordered(
     sort: PlaylistSort,

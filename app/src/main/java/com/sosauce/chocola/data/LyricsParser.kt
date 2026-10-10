@@ -13,7 +13,7 @@ import com.mocharealm.accompanist.lyrics.core.model.synced.SyncedLine
 import com.mocharealm.accompanist.lyrics.core.model.synced.mapper.toSyncedLine
 import com.mocharealm.accompanist.lyrics.core.parser.AutoParser
 import com.mocharealm.accompanist.lyrics.core.parser.EnhancedLrcParser
-import com.sosauce.chocola.domain.model.Lyrics
+import com.sosauce.chocola.core.domain.model.Lyrics
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File

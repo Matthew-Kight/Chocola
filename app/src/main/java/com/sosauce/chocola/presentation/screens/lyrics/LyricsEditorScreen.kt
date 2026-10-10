@@ -42,7 +42,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sosauce.chocola.R
-import com.sosauce.chocola.domain.model.Lyrics
+import com.sosauce.chocola.core.domain.model.Lyrics
 import com.sosauce.chocola.presentation.components.CuteListItem
 import com.sosauce.chocola.core.presentation.util.rememberFocusRequester
 import com.sosauce.chocola.core.presentation.util.toLyricDuration

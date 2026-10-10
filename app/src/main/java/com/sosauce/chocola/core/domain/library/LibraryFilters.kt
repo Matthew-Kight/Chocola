@@ -3,12 +3,12 @@ package com.sosauce.chocola.core.domain.library
 import androidx.compose.ui.util.fastFilter
 import com.sosauce.chocola.core.domain.util.regex
 import com.sosauce.chocola.core.domain.util.thenIf
-import com.sosauce.chocola.data.datastore.SearchSettings
-import com.sosauce.chocola.data.models.Album
-import com.sosauce.chocola.data.models.Artist
-import com.sosauce.chocola.data.models.CuteTrack
-import com.sosauce.chocola.utils.AlbumSort
-import com.sosauce.chocola.utils.ArtistSort
+import com.sosauce.chocola.core.domain.model.SearchSettings
+import com.sosauce.chocola.core.domain.model.Album
+import com.sosauce.chocola.core.domain.model.Artist
+import com.sosauce.chocola.core.domain.model.CuteTrack
+import com.sosauce.chocola.core.domain.model.AlbumSort
+import com.sosauce.chocola.core.domain.model.ArtistSort
 
 fun List<CuteTrack>.search(
     query: String,

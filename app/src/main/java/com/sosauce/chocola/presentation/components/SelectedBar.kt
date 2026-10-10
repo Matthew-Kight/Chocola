@@ -31,7 +31,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.domain.actions.PlayerActions
 import com.sosauce.chocola.presentation.components.dialogs.DeletionDialog
 import com.sosauce.chocola.presentation.screens.playlists.components.PlaylistPicker

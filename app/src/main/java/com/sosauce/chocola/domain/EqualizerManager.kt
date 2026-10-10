@@ -5,8 +5,8 @@ import androidx.collection.FloatList
 import androidx.collection.floatListOf
 import androidx.compose.ui.util.fastMap
 import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.models.EqualizerBand
-import com.sosauce.chocola.data.models.EqualizerPreset
+import com.sosauce.chocola.core.domain.model.EqualizerBand
+import com.sosauce.chocola.core.domain.model.EqualizerPreset
 import com.sosauce.chocola.core.domain.util.copyMutate
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

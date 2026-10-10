@@ -35,7 +35,7 @@ import androidx.compose.ui.util.fastForEach
 import com.sosauce.chocola.R
 import com.sosauce.chocola.data.datastore.rememberGroupByFolders
 import com.sosauce.chocola.data.datastore.rememberHiddenFolders
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.data.states.MusicState
 import com.sosauce.chocola.domain.actions.PlaySource
 import com.sosauce.chocola.domain.actions.PlayerActions

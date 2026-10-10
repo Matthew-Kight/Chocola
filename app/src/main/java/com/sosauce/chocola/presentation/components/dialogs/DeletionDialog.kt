@@ -49,7 +49,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.fastMap
 import coil3.compose.AsyncImage
 import com.sosauce.chocola.R
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.data.models.Playlist
 import com.sosauce.chocola.presentation.screens.playlists.PlaylistActions
 import kotlinx.coroutines.flow.collectLatest

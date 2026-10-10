@@ -4,8 +4,8 @@ import androidx.collection.FloatList
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.models.EqualizerBand
-import com.sosauce.chocola.data.models.EqualizerPreset
+import com.sosauce.chocola.core.domain.model.EqualizerBand
+import com.sosauce.chocola.core.domain.model.EqualizerPreset
 import com.sosauce.chocola.domain.EqualizerManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

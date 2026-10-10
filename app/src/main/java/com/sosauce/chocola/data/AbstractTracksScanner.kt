@@ -7,11 +7,11 @@ import android.content.Context
 import android.provider.MediaStore
 import androidx.compose.ui.util.fastFilter
 import androidx.core.net.toUri
-import com.sosauce.chocola.data.datastore.TracksSettings
+import com.sosauce.chocola.core.domain.model.TracksSettings
 import com.sosauce.chocola.data.datastore.UserPreferences
-import com.sosauce.chocola.data.models.CuteTrack
+import com.sosauce.chocola.core.domain.model.CuteTrack
 import com.sosauce.chocola.data.repositories.SafManager
-import com.sosauce.chocola.utils.TrackSort
+import com.sosauce.chocola.core.domain.model.TrackSort
 import com.sosauce.chocola.core.domain.util.combine
 import com.sosauce.chocola.core.data.content.observe
 import com.sosauce.chocola.core.domain.library.orderAlbumTrackNumber

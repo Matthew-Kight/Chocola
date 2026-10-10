@@ -1,4 +1,4 @@
-package com.sosauce.chocola.data.models
+package com.sosauce.chocola.core.domain.model
 
 import androidx.core.net.toUri
 import kotlinx.serialization.Serializable
