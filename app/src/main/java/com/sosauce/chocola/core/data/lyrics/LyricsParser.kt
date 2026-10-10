@@ -6,7 +6,6 @@ import android.net.Uri
 import android.os.ParcelFileDescriptor
 import android.provider.MediaStore
 import android.util.Log
-import androidx.compose.ui.util.fastMap
 import com.kyant.taglib.TagLib
 import com.mocharealm.accompanist.lyrics.core.model.karaoke.KaraokeLine
 import com.mocharealm.accompanist.lyrics.core.model.synced.SyncedLine
@@ -32,7 +31,7 @@ class LyricsParser(private val context: Context) {
         return@withContext if (lyricsFile.exists()) {
             lyricsFile.bufferedReader().useLines { lines ->
                 val lyrics = EnhancedLrcParser.parse(lines.toList())
-                lyrics.lines.fastMap { line ->
+                lyrics.lines.map { line ->
                     if (line is SyncedLine) {
                         line.toLyricLine()
                     } else {
@@ -48,7 +47,7 @@ class LyricsParser(private val context: Context) {
             // Tries to load synced embedded lyrics, if embedded lyrics are unsynced, just return raw embedded lyrics
             autoParser.parse(embeddedLyrics)
                 .takeIf { it.lines.isNotEmpty() }
-                ?.lines?.fastMap { line ->
+                ?.lines?.map { line ->
                     if (line is SyncedLine) {
                         line.toLyricLine()
                     } else {

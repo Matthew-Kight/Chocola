@@ -1,7 +1,6 @@
 package com.sosauce.chocola.core.data.datastore
 
 import android.content.Context
-import androidx.compose.ui.util.fastMap
 import androidx.datastore.preferences.core.edit
 import com.sosauce.chocola.core.data.datastore.PreferencesKeys.ALBUM_SORT
 import com.sosauce.chocola.core.data.datastore.PreferencesKeys.ARTIST_SORT
@@ -130,7 +129,7 @@ class UserPreferences(
         val gainsString = context.dataStore.data.map {
             it[EQUALIZER_GAINS] ?: "0,0,0,0,0,0,0,0,0,0"
         }.first()
-        return gainsString.split(",").fastMap { it.toFloatOrNull() ?: 0f }
+        return gainsString.split(",").map { it.toFloatOrNull() ?: 0f }
     }
 
     suspend fun saveBandGains(gains: List<Float>) {

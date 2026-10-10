@@ -1,6 +1,5 @@
 package com.sosauce.chocola.core.data.auto
 
-import androidx.compose.ui.util.fastMap
 import androidx.media3.common.MediaItem
 import com.sosauce.chocola.core.data.library.AbstractTracksScanner
 import com.sosauce.chocola.core.data.mapper.toMediaItem
@@ -19,9 +18,9 @@ class AndroidAutoHelper(
             allTracks
                 .drop(offset)
                 .take(limit)
-                .fastMap { it.toMediaItem() }
+                .map { it.toMediaItem() }
         } else {
-            allTracks.fastMap { it.toMediaItem() }
+            allTracks.map { it.toMediaItem() }
         }
     }
 

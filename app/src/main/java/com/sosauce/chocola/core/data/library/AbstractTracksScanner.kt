@@ -5,7 +5,6 @@ package com.sosauce.chocola.core.data.library
 import android.content.ContentUris
 import android.content.Context
 import android.provider.MediaStore
-import androidx.compose.ui.util.fastFilter
 import androidx.core.net.toUri
 import com.sosauce.chocola.core.domain.model.TracksSettings
 import com.sosauce.chocola.core.data.datastore.UserPreferences
@@ -75,7 +74,7 @@ class AbstractTracksScanner(
                 minTrackDuration = minTrackDuration
             )
 
-            val filtered = (rawTracks + saf).fastFilter { track ->
+            val filtered = (rawTracks + saf).filter { track ->
                 val isNotHidden = !hidden.contains(track.mediaId)
                 val isWhitelisted = whitelistedFolders.contains(track.folder)
 

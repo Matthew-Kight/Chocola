@@ -1,6 +1,5 @@
 package com.sosauce.chocola.core.domain.library
 
-import androidx.compose.ui.util.fastFilter
 import com.sosauce.chocola.core.domain.util.regex
 import com.sosauce.chocola.core.domain.util.thenIf
 import com.sosauce.chocola.core.domain.model.SearchSettings
@@ -15,7 +14,7 @@ fun List<CuteTrack>.search(
     searchSettings: SearchSettings,
 ): List<CuteTrack> {
     val regexPattern = query.regex(searchSettings.matchCase)
-    return fastFilter { track ->
+    return filter { track ->
         if (searchSettings.regex) {
             regexPattern.containsMatchIn(track.title)
         } else {
@@ -34,7 +33,7 @@ fun List<Album>.ordered(
 ): List<Album> {
     val regexPattern = query.regex(matchCase)
 
-    val filtered = this.fastFilter { track ->
+    val filtered = this.filter { track ->
         if (regex) {
             regexPattern.containsMatchIn(track.name)
         } else {
@@ -60,7 +59,7 @@ fun List<Artist>.ordered(
 ): List<Artist> {
     val regexPattern = query.regex(matchCase)
 
-    val filtered = this.fastFilter { track ->
+    val filtered = this.filter { track ->
         if (regex) {
             regexPattern.containsMatchIn(track.name)
         } else {

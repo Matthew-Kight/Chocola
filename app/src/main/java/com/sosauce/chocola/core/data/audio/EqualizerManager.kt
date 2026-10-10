@@ -3,7 +3,6 @@ package com.sosauce.chocola.core.data.audio
 import android.media.audiofx.DynamicsProcessing
 import androidx.collection.FloatList
 import androidx.collection.floatListOf
-import androidx.compose.ui.util.fastMap
 import com.sosauce.chocola.core.data.datastore.UserPreferences
 import com.sosauce.chocola.core.domain.model.EqualizerBand
 import com.sosauce.chocola.core.domain.model.EqualizerPreset
@@ -110,7 +109,7 @@ class EqualizerManager(
                     }
                 }
             }
-            userPreferences.saveBandGains(eqBands.value.fastMap { it.gain })
+            userPreferences.saveBandGains(eqBands.value.map { it.gain })
         }
 
     }

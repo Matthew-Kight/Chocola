@@ -1,6 +1,5 @@
 package com.sosauce.chocola.core.data.local
 
-import androidx.compose.ui.util.fastFilter
 import com.sosauce.chocola.core.domain.util.regex
 import com.sosauce.chocola.core.domain.util.thenIf
 import com.sosauce.chocola.core.domain.model.PlaylistSort
@@ -14,7 +13,7 @@ fun List<Playlist>.ordered(
 ): List<Playlist> {
     val regexPattern = query.regex(matchCase)
 
-    val filtered = this.fastFilter { track ->
+    val filtered = this.filter { track ->
         if (regex) {
             regexPattern.containsMatchIn(track.name)
         } else {
