@@ -112,6 +112,9 @@ import com.sosauce.chocola.feature.playing.presentation.NowPlaying
 import com.sosauce.chocola.core.designsystem.components.PlayPauseButton
 import com.sosauce.chocola.core.presentation.navigation.LocalScreen
 import com.sosauce.chocola.core.designsystem.SharedTransitionKeys
+import com.sosauce.chocola.core.presentation.preferences.rememberPlaylistSort
+import com.sosauce.chocola.core.presentation.preferences.rememberSortArtistsAscending
+import com.sosauce.chocola.core.presentation.preferences.rememberSortPlaylistsAscending
 import com.sosauce.nekobites.animations.bouncySpec
 import com.sosauce.chocola.core.presentation.util.rememberInteractionSource
 import com.sosauce.nekobites.animations.AnimatedDrawable
@@ -855,7 +858,7 @@ object CuteSearchbarDefaults {
     @Composable
     fun ArtistSortPopupContent() {
 
-        var isSortedByASC by rememberSortAlbumsAscending()
+        var isSortedByASC by rememberSortArtistsAscending()
         var artistSort by rememberArtistSort()
 
         DropdownMenuGroup(
@@ -872,6 +875,41 @@ object CuteSearchbarDefaults {
                     SelectableDropdownMenuItem(
                         selected = artistSort == i,
                         onClick = { artistSort = i },
+                        shapes = MenuDefaults.itemShape(i, 3),
+                        colors = MenuDefaults.selectableItemColors(),
+                        text = { Text(stringResource(text)) }
+                    )
+                }
+            }
+        )
+        Spacer(Modifier.height(MenuDefaults.GroupSpacing))
+        SortingButtons(
+            ascending = isSortedByASC,
+            onChangeSort = { isSortedByASC = it }
+        )
+    }
+
+    @Composable
+    fun PlaylistSortPopupContent() {
+
+        var isSortedByASC by rememberSortPlaylistsAscending()
+        var playlistSort by rememberPlaylistSort()
+
+        DropdownMenuGroup(
+            shapes = MenuDefaults.groupShapes(),
+            content = {
+                repeat(4) { i ->
+                    val text = when (i) {
+                        0 -> R.string.name
+                        1 -> R.string.number_of_tracks
+                        2 -> R.string.playlist_color
+                        3 -> R.string.playlist_tags
+                        else -> throw IndexOutOfBoundsException()
+                    }
+
+                    SelectableDropdownMenuItem(
+                        selected = playlistSort == i,
+                        onClick = { playlistSort = i },
                         shapes = MenuDefaults.itemShape(i, 3),
                         colors = MenuDefaults.selectableItemColors(),
                         text = { Text(stringResource(text)) }

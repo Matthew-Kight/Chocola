@@ -28,7 +28,9 @@ import com.sosauce.chocola.core.domain.player.PlayerActions
 import com.sosauce.chocola.core.presentation.components.CuteSearchbar
 import com.sosauce.chocola.core.presentation.components.CuteSearchbarDefaults
 import com.sosauce.chocola.core.designsystem.components.NoResult
+import com.sosauce.chocola.core.domain.model.Album
 import com.sosauce.chocola.core.presentation.navigation.Screen
+import com.sosauce.chocola.core.presentation.preferences.rememberHideSingleAlbums
 import com.sosauce.chocola.feature.library.presentation.album.components.AlbumCard
 import com.sosauce.chocola.core.presentation.util.selfAlignHorizontally
 import com.sosauce.nekobites.components.LoadingBox
@@ -44,7 +46,13 @@ fun SharedTransitionScope.AlbumsScreen(
 ) {
     val lazyState = rememberLazyGridState()
     var numberOfAlbumGrids by rememberAlbumGrids()
-
+    var hideSingleAlbums by rememberHideSingleAlbums()
+    var albums = mutableListOf<Album>()
+    if (hideSingleAlbums) {
+        for (album in state.albums) {
+            if (album.tracks.size > 1) albums.add(album)
+        }
+    } else albums = state.albums.toMutableList()
 
     Scaffold(
         contentWindowInsets = WindowInsets.safeDrawing,
@@ -70,7 +78,7 @@ fun SharedTransitionScope.AlbumsScreen(
                 state = lazyState,
             ) {
 
-                if (state.albums.isEmpty()) {
+                if (albums.isEmpty()) {
                     item(
                         key = "empty",
                         span = { GridItemSpan(maxLineSpan) }
@@ -91,7 +99,7 @@ fun SharedTransitionScope.AlbumsScreen(
                 }
 
                 items(
-                    items = state.albums,
+                    items = albums,
                     key = { it.id }
                 ) { album ->
                     AlbumCard(

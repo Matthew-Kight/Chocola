@@ -395,7 +395,10 @@ class MusicViewModel(
             is PlayerActions.PlayRandom -> mediaController!!.playRandom()
             is PlayerActions.PlayOrPause -> mediaController!!.playOrPause()
             is PlayerActions.SeekToNextMusic -> mediaController!!.seekToNextMediaItem()
-            is PlayerActions.SeekToPreviousMusic -> mediaController!!.seekToPreviousMediaItem()
+            is PlayerActions.SeekToPreviousMusic -> {
+                if (mediaController!!.currentPosition >= 5000) mediaController!!.seekTo(0)
+                else mediaController!!.seekToPreviousMediaItem()
+            }
             is PlayerActions.SeekTo -> mediaController!!.seekTo(mediaController!!.currentPosition + action.position)
             is PlayerActions.SeekToSlider -> mediaController!!.seekTo(action.position)
             is PlayerActions.RewindTo -> mediaController!!.seekTo(mediaController!!.currentPosition - action.position)
@@ -456,7 +459,7 @@ class MusicViewModel(
                     is PlaySource.Artist -> currentTracks.fastFilter { it.artist == source.name }
                     is PlaySource.ExplicitTracks -> source.tracks
                 }
-                
+
                 if (random) {
                     mediaController!!.setMediaItems(targetTracks.fastMap { it.toMediaItem() })
                     mediaController!!.playRandom()
@@ -471,7 +474,7 @@ class MusicViewModel(
                         }
 
 
-                if (sameQueue) {
+                if (!mediaController!!.shuffleModeEnabled && sameQueue) {
                     val playerIndex = targetTracks.indexOfFirst { it.mediaId == action.mediaId }
                     mediaController!!.seekTo(playerIndex, 0)
                     mediaController!!.play()
@@ -605,7 +608,7 @@ class MusicViewModel(
             }
 
             is PlayerActions.StartPlaylist -> {
-                mediaController!!.shuffleModeEnabled = !mediaController!!.shuffleModeEnabled
+                mediaController!!.shuffleModeEnabled = false
                 val currentTracks = tracks.value
 
 
