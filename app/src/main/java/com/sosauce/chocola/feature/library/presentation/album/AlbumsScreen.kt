@@ -47,12 +47,6 @@ fun SharedTransitionScope.AlbumsScreen(
     val lazyState = rememberLazyGridState()
     var numberOfAlbumGrids by rememberAlbumGrids()
     var hideSingleAlbums by rememberHideSingleAlbums()
-    var albums = mutableListOf<Album>()
-    if (hideSingleAlbums) {
-        for (album in state.albums) {
-            if (album.tracks.size > 1) albums.add(album)
-        }
-    } else albums = state.albums.toMutableList()
 
     Scaffold(
         contentWindowInsets = WindowInsets.safeDrawing,
@@ -78,7 +72,7 @@ fun SharedTransitionScope.AlbumsScreen(
                 state = lazyState,
             ) {
 
-                if (albums.isEmpty()) {
+                if (state.albums.isEmpty()) {
                     item(
                         key = "empty",
                         span = { GridItemSpan(maxLineSpan) }
@@ -99,7 +93,7 @@ fun SharedTransitionScope.AlbumsScreen(
                 }
 
                 items(
-                    items = albums,
+                    items = state.albums,
                     key = { it.id }
                 ) { album ->
                     AlbumCard(

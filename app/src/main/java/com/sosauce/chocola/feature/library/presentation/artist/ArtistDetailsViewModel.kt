@@ -38,13 +38,14 @@ class ArtistDetailsViewModel(
     val state = combine(
         abstractTracksScanner.latestTracks(),
         userPreferences.searchSettings(),
+        userPreferences.getHideSingleAlbums(),
         searchQuery
-    ) { tracks, settings, query ->
+    ) { tracks, settings, hideSingleAlbums, query ->
         val searched = tracks
             .fastFilter { it.artist == artistName }
             .search(query.toString(), settings)
 
-        val albums = searched
+        var albums = searched
             .groupBy { it.album }
             .map { (albumName, tracks) ->
                 val lastTrack = tracks.last()
@@ -56,6 +57,9 @@ class ArtistDetailsViewModel(
                     art = ImageUtils.getAlbumArt(lastTrack.albumId)
                 )
             }
+        if (hideSingleAlbums) {
+            albums = albums.filter { it.tracks.size > 1 }
+        }
 
 
 

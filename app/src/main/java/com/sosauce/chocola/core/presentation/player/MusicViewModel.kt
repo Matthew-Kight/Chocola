@@ -404,9 +404,15 @@ class MusicViewModel(
             is PlayerActions.RewindTo -> mediaController!!.seekTo(mediaController!!.currentPosition - action.position)
             is PlayerActions.PlayTrack -> {
                 val targetMediaId = action.track.mediaId
-                val index = _musicState.value.loadedMedias.indexOfFirst { it.mediaId == targetMediaId }.takeIf { it != -1 }
+                var index = 0
+                for (i in 0..mediaController!!.mediaItemCount) {
+                    if (mediaController!!.getMediaItemAt(i).mediaId == targetMediaId) {
+                        index = i
+                        break
+                    }
+                }
 
-                index?.let { index ->
+                index.let { index ->
                     mediaController!!.seekTo(index, 0)
                     mediaController!!.play()
                 }

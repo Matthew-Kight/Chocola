@@ -16,6 +16,7 @@ import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.toMutableStateList
@@ -69,6 +70,13 @@ fun QueueScreen(
 
         hapticFeedback.performHapticFeedback(HapticFeedbackType.SegmentFrequentTick)
 
+    }
+
+    LaunchedEffect(musicState.loadedMedias, musicState.track.mediaId) {
+        val target = musicState.loadedMedias.indexOfFirst { it.mediaId == musicState.track.mediaId }
+        if (target != -1 && lazyListState.firstVisibleItemIndex != target) {
+            lazyListState.scrollToItem(target)
+        }
     }
 
     Scaffold(
